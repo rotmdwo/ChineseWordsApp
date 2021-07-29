@@ -2,6 +2,7 @@ package edu.skku.chinesewords
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.android.gms.ads.MobileAds
 import kotlinx.coroutines.*
 import java.util.*
 
@@ -25,6 +26,9 @@ class OnBoardingActivity : AppCompatActivity() {
 
             // set Words
             setHSKWords()
+
+            // initialize AD
+            MobileAds.initialize(activity)
 
             val takenTime = System.currentTimeMillis() - startTime
             val timerTask: TimerTask = MyTimerTask(activity)

@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">중국어 단어</string>
+
+
+    <!-- MainActivity -->
+    <string name="main_empty_word_book">단어장이 비어 있습니다.\n단어장을 설정해주세요.</string>
 </resources>
