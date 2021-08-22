@@ -20,6 +20,7 @@ class AppPreference {
         val EXIST_HSK_4 = "EXIST_HSK_4"
         val EXIST_HSK_5 = "EXIST_HSK_5"
         val EXIST_HSK_6 = "EXIST_HSK_6"
+        val EXIST_MY_WORDS = "EXIST_MY_WORDS"
 
 
         private var INSTANCE: AppPreference? = null
@@ -42,6 +43,7 @@ class AppPreference {
     private var mSharedPreferencsHSK4: SharedPreferences
     private var mSharedPreferencsHSK5: SharedPreferences
     private var mSharedPreferencsHSK6: SharedPreferences
+    private var mSharedPreferencsMyWords: SharedPreferences
 
 
     private constructor(context: Context) {
@@ -52,6 +54,7 @@ class AppPreference {
         mSharedPreferencsHSK4 = context.getSharedPreferences(PREFERENCE_NAME_HSK_4, Context.MODE_PRIVATE)
         mSharedPreferencsHSK5 = context.getSharedPreferences(PREFERENCE_NAME_HSK_5, Context.MODE_PRIVATE)
         mSharedPreferencsHSK6 = context.getSharedPreferences(PREFERENCE_NAME_HSK_6, Context.MODE_PRIVATE)
+        mSharedPreferencsMyWords = context.getSharedPreferences(PREFERENCE_NAME_MY_WORDS, Context.MODE_PRIVATE)
     }
 
     fun getSharedPreferencesHSK1(): SharedPreferences {
@@ -81,5 +84,21 @@ class AppPreference {
 
     fun getAllFromHSK1(): Map<String, String> {
         return mSharedPreferencsHSK1.all as Map<String, String>
+    }
+
+    fun setWordAtHSK3(character: String, meaning: String) {
+        mSharedPreferencsHSK3.edit().putString(character, meaning).apply()
+    }
+
+    fun getAllFromHSK3(): Map<String, String> {
+        return mSharedPreferencsHSK3.all as Map<String, String>
+    }
+
+    fun setWordAtMyWords(character: String, meaning: String) {
+        mSharedPreferencsMyWords.edit().putString(character, meaning).apply()
+    }
+
+    fun getAllFromMyWords(): Map<String, String> {
+        return mSharedPreferencsMyWords.all as Map<String, String>
     }
 }

@@ -1,0 +1,154 @@
+{
+  "hsk3" : [
+    {
+      "id": 302,
+      "hanzi": "啊",
+      "pinyin": "a",
+      "translations": "감탄·찬탄 어기조사"
+    },
+    {
+      "id": 305,
+      "hanzi": "安静",
+      "pinyin": "ān jìng",
+      "translations": "조용하다"
+    },
+    {
+      "id": 308,
+      "hanzi": "班",
+      "pinyin": "bān",
+      "translations": "반, 조"
+    },
+    {
+      "id": 309,
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "translations": "절반"
+    },
+    {
+      "id": 311,
+      "hanzi": "办公室",
+      "pinyin": "bàn gōng shì",
+      "translations": "사무실"
+    },
+    {
+      "id": 312,
+      "hanzi": "帮忙",
+      "pinyin": "bāng máng",
+      "translations": "돕다"
+    },
+    {
+      "id": 326,
+      "hanzi": "冰箱",
+      "pinyin": "bīng xiāng",
+      "translations": "냉장고"
+    },
+    {
+      "id": 327,
+      "hanzi": "才",
+      "pinyin": "cái",
+      "translations": "~에서야"
+    },
+    {
+      "id": 331,
+      "hanzi": "层",
+      "pinyin": "céng",
+      "translations": "층"
+    },
+    {
+      "id": 332,
+      "hanzi": "差",
+      "pinyin": "chà",
+      "translations": "다르다, 부족하다"
+    },
+    {
+      "id": 333,
+      "hanzi": "超市",
+      "pinyin": "chāo shì",
+      "translations": "슈퍼마켓"
+    },
+    {
+      "id": 335,
+      "hanzi": "成绩",
+      "pinyin": "chéng jì",
+      "translations": "성적, 성과"
+    },
+    {
+      "id": 340,
+      "hanzi": "厨房",
+      "pinyin": "chú fáng",
+      "translations": "주방"
+    },
+    {
+      "id": 344,
+      "hanzi": "打扫",
+      "pinyin": "dǎ sǎo",
+      "translations": "청소하다"
+    },
+    {
+      "id": 348,
+      "hanzi": "蛋糕",
+      "pinyin": "dàn gāo",
+      "translations": "케이크"
+    },
+    {
+      "id": 350,
+      "hanzi": "地",
+      "pinyin": "de",
+      "translations": "땅"
+    },
+    {
+      "id": 353,
+      "hanzi": "地方",
+      "pinyin": "dì fang",
+      "translations": "지방, 장소"
+    },
+    {
+      "id": 354,
+      "hanzi": "地铁",
+      "pinyin": "dì tiě",
+      "translations": "지하철"
+    },
+    {
+      "id": 355,
+      "hanzi": "地图",
+      "pinyin": "dì tú",
+      "translations": "지도"
+    },
+    {
+      "id": 356,
+      "hanzi": "电梯",
+      "pinyin": "diàn tī",
+      "translations": "엘리베이터"
+    },
+    {
+      "id": 360,
+      "hanzi": "动物",
+      "pinyin": "dòng wù",
+      "translations": "동물"
+    },
+    {
+      "id": 364,
+      "hanzi": "多么",
+      "pinyin": "duō me",
+      "translations": "얼마나"
+    },
+    {
+      "id": 365,
+      "hanzi": "饿",
+      "pinyin": "è",
+      "translations": "배고프다"
+    },
+    {
+      "id": 369,
+      "hanzi": "发现",
+      "pinyin": "fā xiàn",
+      "translations": "발견하다"
+    },
+    {
+      "id": 370,
+      "hanzi": "方便",
+      "pinyin": "fāng biàn",
+      "translations": "편리하다"
+    }
+  ]
+}

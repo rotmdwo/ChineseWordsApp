@@ -1,0 +1,424 @@
+{
+  "hsk3" : [
+    {
+      "id": 301,
+      "hanzi": "阿姨",
+      "pinyin": "ā yí",
+      "translations": "이모, 아주머니"
+    },
+    {
+      "id": 302,
+      "hanzi": "啊",
+      "pinyin": "a",
+      "translations": "감탄·찬탄 어기조사"
+    },
+    {
+      "id": 303,
+      "hanzi": "矮",
+      "pinyin": "ǎi",
+      "translations": "작다, 낮다"
+    },
+    {
+      "id": 304,
+      "hanzi": "爱好",
+      "pinyin": "ài hào",
+      "translations": "애호하다, 취미"
+    },
+    {
+      "id": 305,
+      "hanzi": "安静",
+      "pinyin": "ān jìng",
+      "translations": "조용하다"
+    },
+    {
+      "id": 306,
+      "hanzi": "把",
+      "pinyin": "bǎ",
+      "translations": "잡다"
+    },
+    {
+      "id": 307,
+      "hanzi": "搬",
+      "pinyin": "bān",
+      "translations": "옮기다"
+    },
+    {
+      "id": 308,
+      "hanzi": "班",
+      "pinyin": "bān",
+      "translations": "반, 조"
+    },
+    {
+      "id": 309,
+      "hanzi": "半",
+      "pinyin": "bàn",
+      "translations": "절반"
+    },
+    {
+      "id": 310,
+      "hanzi": "办法",
+      "pinyin": "bàn fǎ",
+      "translations": "방법, 수단"
+    },
+    {
+      "id": 311,
+      "hanzi": "办公室",
+      "pinyin": "bàn gōng shì",
+      "translations": "사무실"
+    },
+    {
+      "id": 312,
+      "hanzi": "帮忙",
+      "pinyin": "bāng máng",
+      "translations": "돕다"
+    },
+    {
+      "id": 313,
+      "hanzi": "包",
+      "pinyin": "bāo",
+      "translations": "싸매다"
+    },
+    {
+      "id": 314,
+      "hanzi": "饱",
+      "pinyin": "bǎo",
+      "translations": "배부르다, 충분히"
+    },
+    {
+      "id": 315,
+      "hanzi": "北方",
+      "pinyin": "běi fāng",
+      "translations": "북쪽, 화베이 지방"
+    },
+    {
+      "id": 316,
+      "hanzi": "被",
+      "pinyin": "bèi",
+      "translations": "이불"
+    },
+    {
+      "id": 317,
+      "hanzi": "鼻子",
+      "pinyin": "bí zi",
+      "translations": "코"
+    },
+    {
+      "id": 318,
+      "hanzi": "比较",
+      "pinyin": "bǐ jiào",
+      "translations": "비교하다"
+    },
+    {
+      "id": 319,
+      "hanzi": "比赛",
+      "pinyin": "bǐ sài",
+      "translations": "시합하다"
+    },
+    {
+      "id": 320,
+      "hanzi": "必须",
+      "pinyin": "bì xū",
+      "translations": "반드시 ~해야 한다"
+    },
+    {
+      "id": 321,
+      "hanzi": "变化",
+      "pinyin": "biàn huà",
+      "translations": "변화하다"
+    },
+    {
+      "id": 322,
+      "hanzi": "表示",
+      "pinyin": "biǎo shì",
+      "translations": "나타내다"
+    },
+    {
+      "id": 323,
+      "hanzi": "表演",
+      "pinyin": "biǎo yǎn",
+      "translations": "상연하다"
+    },
+    {
+      "id": 324,
+      "hanzi": "别人",
+      "pinyin": "bié ren",
+      "translations": "타인"
+    },
+    {
+      "id": 325,
+      "hanzi": "宾馆",
+      "pinyin": "bīn guǎn",
+      "translations": "여관"
+    },
+    {
+      "id": 326,
+      "hanzi": "冰箱",
+      "pinyin": "bīng xiāng",
+      "translations": "냉장고"
+    },
+    {
+      "id": 327,
+      "hanzi": "才",
+      "pinyin": "cái",
+      "translations": "~에서야"
+    },
+    {
+      "id": 328,
+      "hanzi": "菜单",
+      "pinyin": "cài dān",
+      "translations": "메뉴"
+    },
+    {
+      "id": 329,
+      "hanzi": "参加",
+      "pinyin": "cān jiā",
+      "translations": "참가하다"
+    },
+    {
+      "id": 330,
+      "hanzi": "草",
+      "pinyin": "cǎo",
+      "translations": "풀"
+    },
+    {
+      "id": 331,
+      "hanzi": "层",
+      "pinyin": "céng",
+      "translations": "층"
+    },
+    {
+      "id": 332,
+      "hanzi": "差",
+      "pinyin": "chà",
+      "translations": "다르다, 부족하다"
+    },
+    {
+      "id": 333,
+      "hanzi": "超市",
+      "pinyin": "chāo shì",
+      "translations": "슈퍼마켓"
+    },
+    {
+      "id": 334,
+      "hanzi": "衬衫",
+      "pinyin": "chèn shān",
+      "translations": "셔츠"
+    },
+    {
+      "id": 335,
+      "hanzi": "成绩",
+      "pinyin": "chéng jì",
+      "translations": "성적, 성과"
+    },
+    {
+      "id": 336,
+      "hanzi": "城市",
+      "pinyin": "chéng shì",
+      "translations": "도시"
+    },
+    {
+      "id": 337,
+      "hanzi": "迟到",
+      "pinyin": "chí dào",
+      "translations": "지각하다"
+    },
+    {
+      "id": 338,
+      "hanzi": "出现",
+      "pinyin": "chū xiàn",
+      "translations": "출현하다"
+    },
+    {
+      "id": 339,
+      "hanzi": "除了",
+      "pinyin": "chú le",
+      "translations": "~을 제외하고"
+    },
+    {
+      "id": 340,
+      "hanzi": "厨房",
+      "pinyin": "chú fáng",
+      "translations": "주방"
+    },
+    {
+      "id": 341,
+      "hanzi": "春",
+      "pinyin": "chūn",
+      "translations": "봄"
+    },
+    {
+      "id": 342,
+      "hanzi": "词语",
+      "pinyin": "cí yǔ",
+      "translations": "단어"
+    },
+    {
+      "id": 343,
+      "hanzi": "聪明",
+      "pinyin": "cōng ming",
+      "translations": "총명하다"
+    },
+    {
+      "id": 344,
+      "hanzi": "打扫",
+      "pinyin": "dǎ sǎo",
+      "translations": "청소하다"
+    },
+    {
+      "id": 345,
+      "hanzi": "打算",
+      "pinyin": "dǎ suàn",
+      "translations": "계획하다"
+    },
+    {
+      "id": 346,
+      "hanzi": "带",
+      "pinyin": "dài",
+      "translations": "띠, 밴드"
+    },
+    {
+      "id": 347,
+      "hanzi": "担心",
+      "pinyin": "dān xīn",
+      "translations": "걱정하다"
+    },
+    {
+      "id": 348,
+      "hanzi": "蛋糕",
+      "pinyin": "dàn gāo",
+      "translations": "케이크"
+    },
+    {
+      "id": 349,
+      "hanzi": "当然",
+      "pinyin": "dāng rán",
+      "translations": "당연히"
+    },
+    {
+      "id": 350,
+      "hanzi": "地",
+      "pinyin": "de",
+      "translations": "땅"
+    },
+    {
+      "id": 351,
+      "hanzi": "灯",
+      "pinyin": "dēng",
+      "translations": "등불"
+    },
+    {
+      "id": 352,
+      "hanzi": "低",
+      "pinyin": "dī",
+      "translations": "낮다"
+    },
+    {
+      "id": 353,
+      "hanzi": "地方",
+      "pinyin": "dì fang",
+      "translations": "지방, 장소"
+    },
+    {
+      "id": 354,
+      "hanzi": "地铁",
+      "pinyin": "dì tiě",
+      "translations": "지하철"
+    },
+    {
+      "id": 355,
+      "hanzi": "地图",
+      "pinyin": "dì tú",
+      "translations": "지도"
+    },
+    {
+      "id": 356,
+      "hanzi": "电梯",
+      "pinyin": "diàn tī",
+      "translations": "엘리베이터"
+    },
+    {
+      "id": 357,
+      "hanzi": "电子",
+      "pinyin": "diàn zǐ",
+      "translations": "전자"
+    },
+    {
+      "id": 358,
+      "hanzi": "冬",
+      "pinyin": "dōng",
+      "translations": "겨울"
+    },
+    {
+      "id": 359,
+      "hanzi": "东",
+      "pinyin": "dōng",
+      "translations": "동쪽"
+    },
+    {
+      "id": 360,
+      "hanzi": "动物",
+      "pinyin": "dòng wù",
+      "translations": "동물"
+    },
+    {
+      "id": 361,
+      "hanzi": "短",
+      "pinyin": "duǎn",
+      "translations": "짧다, 부족하다"
+    },
+    {
+      "id": 362,
+      "hanzi": "段",
+      "pinyin": "duàn",
+      "translations": "구간"
+    },
+    {
+      "id": 363,
+      "hanzi": "锻炼",
+      "pinyin": "duàn liàn",
+      "translations": "단련하다"
+    },
+    {
+      "id": 364,
+      "hanzi": "多么",
+      "pinyin": "duō me",
+      "translations": "얼마나"
+    },
+    {
+      "id": 365,
+      "hanzi": "饿",
+      "pinyin": "è",
+      "translations": "배고프다"
+    },
+    {
+      "id": 366,
+      "hanzi": "而且",
+      "pinyin": "ér qiě",
+      "translations": "게다가"
+    },
+    {
+      "id": 367,
+      "hanzi": "耳朵",
+      "pinyin": "ěr duo",
+      "translations": "귀"
+    },
+    {
+      "id": 368,
+      "hanzi": "发烧",
+      "pinyin": "fā shāo",
+      "translations": "열이 나다"
+    },
+    {
+      "id": 369,
+      "hanzi": "发现",
+      "pinyin": "fā xiàn",
+      "translations": "발견하다"
+    },
+    {
+      "id": 370,
+      "hanzi": "方便",
+      "pinyin": "fāng biàn",
+      "translations": "편리하다"
+    }
+  ]
+}

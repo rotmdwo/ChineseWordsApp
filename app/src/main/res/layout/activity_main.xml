@@ -21,19 +21,19 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="55dp" >
+        android:layout_marginTop="55dp">
 
         <LinearLayout
             android:id="@+id/llEmptyWarning"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
             android:layout_marginTop="100dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:orientation="vertical"
             android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             tools:visibility="visible">
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -44,26 +44,176 @@
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:includeFontPadding="false"
-                android:fontFamily="sans-serif"
-                android:textColor="#555555"
-                android:lineSpacingExtra="5dp"
-                android:textSize="15sp"
-                android:gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="@string/main_empty_word_book" />
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/main_empty_word_book"
+                android:textColor="#555555"
+                android:textSize="15sp" />
         </LinearLayout>
 
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:id="@+id/llQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:elevation="2dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvQuestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="北京"
+                    android:textSize="40sp"
+                    android:textColor="#FF0000"
+                    android:fontFamily="sans-serif-black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAnswer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="40dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:elevation="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/llQuestion"
+                app:layout_constraintBottom_toTopOf="@+id/llAnswer3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/llAnswer2">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="베이징"
+                    android:textSize="35sp"
+                    android:textColor="#222222"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAnswer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:elevation="2dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/llQuestion"
+                app:layout_constraintBottom_toTopOf="@+id/llAnswer4"
+                app:layout_constraintStart_toEndOf="@+id/llAnswer1"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="베이징"
+                    android:textSize="35sp"
+                    android:textColor="#222222"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAnswer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:elevation="2dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/llAnswer1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/llAnswer4"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="베이징"
+                    android:textSize="35sp"
+                    android:textColor="#222222"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAnswer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:elevation="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/llAnswer2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/llAnswer3"
+                app:layout_constraintEnd_toEndOf="parent">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAnswer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="베이징"
+                    android:textSize="35sp"
+                    android:textColor="#222222"
+                    android:fontFamily="sans-serif-black"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCorrect"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_complete_s"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/clQuestion"
+            app:layout_constraintBottom_toTopOf="@+id/adBottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivIncorrect"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/return_ban"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/clQuestion"
+            app:layout_constraintBottom_toTopOf="@+id/adBottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adBottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             ads:adSize="SMART_BANNER"
             ads:adUnitId="@string/AD_BOTTOM_BANNER_ID"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
