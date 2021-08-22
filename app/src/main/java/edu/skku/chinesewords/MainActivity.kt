@@ -243,6 +243,8 @@ class MainActivity : AppCompatActivity() {
                         continue
                     }
 
+                    // TODO: 정답의 발음과 같은 음절의 수만 골라서 보여주기
+
                     val index = getRandomNumber1toN(list.size) - 1
 
                     if (!set.contains(index)) {

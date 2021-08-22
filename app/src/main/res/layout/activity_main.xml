@@ -69,7 +69,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:padding="10dp"
-                android:elevation="2dp"
+                android:elevation="5dp"
+                android:layout_marginTop="10dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
@@ -88,15 +89,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="40dp"
                 android:background="@color/white"
                 android:padding="10dp"
-                android:elevation="2dp"
+                android:elevation="5dp"
                 app:layout_constraintTop_toBottomOf="@+id/llQuestion"
-                app:layout_constraintBottom_toTopOf="@+id/llAnswer3"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/llAnswer2">
+                app:layout_constraintEnd_toEndOf="parent">
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvAnswer1"
                     android:layout_width="wrap_content"
@@ -113,15 +111,11 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:padding="10dp"
-                android:elevation="2dp"
-                android:layout_marginEnd="40dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="10dp"
-                app:layout_constraintTop_toBottomOf="@+id/llQuestion"
-                app:layout_constraintBottom_toTopOf="@+id/llAnswer4"
-                app:layout_constraintStart_toEndOf="@+id/llAnswer1"
-                app:layout_constraintEnd_toEndOf="parent"
-                >
+                android:elevation="5dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/llAnswer1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvAnswer2"
                     android:layout_width="wrap_content"
@@ -138,14 +132,11 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:padding="10dp"
-                android:elevation="2dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/llAnswer1"
+                android:elevation="5dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/llAnswer2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/llAnswer4"
-                app:layout_constraintBottom_toBottomOf="parent">
+                app:layout_constraintEnd_toEndOf="parent">
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvAnswer3"
                     android:layout_width="wrap_content"
@@ -160,15 +151,14 @@
                 android:id="@+id/llAnswer4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="40dp"
                 android:background="@color/white"
                 android:padding="10dp"
-                android:elevation="2dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/llAnswer2"
+                android:elevation="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/llAnswer3"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/llAnswer3"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/tvAnswer4"
