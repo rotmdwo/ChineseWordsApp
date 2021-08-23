@@ -295,12 +295,6 @@
       "translations": "당연히"
     },
     {
-      "id": 350,
-      "hanzi": "地",
-      "pinyin": "de",
-      "translations": "땅"
-    },
-    {
       "id": 351,
       "hanzi": "灯",
       "pinyin": "dēng",
@@ -419,6 +413,966 @@
       "hanzi": "方便",
       "pinyin": "fāng biàn",
       "translations": "편리하다"
+    },
+    {
+      "id": 371,
+      "hanzi": "放",
+      "pinyin": "fàng",
+      "translations": "놓아주다"
+    },
+    {
+      "id": 372,
+      "hanzi": "放心",
+      "pinyin": "fàng xīn",
+      "translations": "안심하다"
+    },
+    {
+      "id": 373,
+      "hanzi": "分",
+      "pinyin": "fēn",
+      "translations": "나누다, 분"
+    },
+    {
+      "id": 374,
+      "hanzi": "附近",
+      "pinyin": "fù jìn",
+      "translations": "부근"
+    },
+    {
+      "id": 375,
+      "hanzi": "复习",
+      "pinyin": "fù xí",
+      "translations": "복습하다"
+    },
+    {
+      "id": 376,
+      "hanzi": "干净",
+      "pinyin": "gān jìng",
+      "translations": "깨끗하다"
+    },
+    {
+      "id": 377,
+      "hanzi": "敢",
+      "pinyin": "gǎn",
+      "translations": "용기가 있다"
+    },
+    {
+      "id": 378,
+      "hanzi": "感冒",
+      "pinyin": "gǎn mào",
+      "translations": "감기(에 걸리다)"
+    },
+    {
+      "id": 379,
+      "hanzi": "刚才",
+      "pinyin": "gāng cái",
+      "translations": "방금"
+    },
+    {
+      "id": 380,
+      "hanzi": "根据",
+      "pinyin": "gēn jù",
+      "translations": "근거(하다)"
+    },
+    {
+      "id": 381,
+      "hanzi": "跟",
+      "pinyin": "gēn",
+      "translations": "뒤꿈치"
+    },
+    {
+      "id": 382,
+      "hanzi": "更",
+      "pinyin": "gèng",
+      "translations": "더욱"
+    },
+    {
+      "id": 383,
+      "hanzi": "公园",
+      "pinyin": "gōng yuán",
+      "translations": "공원"
+    },
+    {
+      "id": 384,
+      "hanzi": "故事",
+      "pinyin": "gù shi",
+      "translations": "고사, 이야기"
+    },
+    {
+      "id": 385,
+      "hanzi": "刮",
+      "pinyin": "guā",
+      "translations": "바람이 불다"
+    },
+    {
+      "id": 386,
+      "hanzi": "关",
+      "pinyin": "guān",
+      "translations": "닫다, 끄다"
+    },
+    {
+      "id": 387,
+      "hanzi": "关系",
+      "pinyin": "guān xì",
+      "translations": "관계"
+    },
+    {
+      "id": 388,
+      "hanzi": "关心",
+      "pinyin": "guān xīn",
+      "translations": "관심을 갖다"
+    },
+    {
+      "id": 389,
+      "hanzi": "关于",
+      "pinyin": "guān yú",
+      "translations": "~에 관해서"
+    },
+    {
+      "id": 390,
+      "hanzi": "国家",
+      "pinyin": "guó jiā",
+      "translations": "국가"
+    },
+    {
+      "id": 391,
+      "hanzi": "果汁",
+      "pinyin": "guǒ zhī",
+      "translations": "과일주스"
+    },
+    {
+      "id": 392,
+      "hanzi": "过去",
+      "pinyin": "guò qu",
+      "translations": "지나가다"
+    },
+    {
+      "id": 393,
+      "hanzi": "还是",
+      "pinyin": "hái shi",
+      "translations": "또는, A 혹은 B"
+    },
+    {
+      "id": 394,
+      "hanzi": "害怕",
+      "pinyin": "hài pà",
+      "translations": "두려워하다"
+    },
+    {
+      "id": 395,
+      "hanzi": "河",
+      "pinyin": "hé",
+      "translations": "강"
+    },
+    {
+      "id": 396,
+      "hanzi": "黑板",
+      "pinyin": "hēi bǎn",
+      "translations": "칠판"
+    },
+    {
+      "id": 397,
+      "hanzi": "护照",
+      "pinyin": "hù zhào",
+      "translations": "여권"
+    },
+    {
+      "id": 398,
+      "hanzi": "花",
+      "pinyin": "huā",
+      "translations": "꽃"
+    },
+    {
+      "id": 399,
+      "hanzi": "花园",
+      "pinyin": "huā yuán",
+      "translations": "정원"
+    },
+    {
+      "id": 400,
+      "hanzi": "画",
+      "pinyin": "huà",
+      "translations": "그리다"
+    },
+    {
+      "id": 401,
+      "hanzi": "坏",
+      "pinyin": "huài",
+      "translations": "나쁘다"
+    },
+    {
+      "id": 402,
+      "hanzi": "环境",
+      "pinyin": "huán jìng",
+      "translations": "환경"
+    },
+    {
+      "id": 403,
+      "hanzi": "换",
+      "pinyin": "huàn",
+      "translations": "교환하다"
+    },
+    {
+      "id": 404,
+      "hanzi": "黄",
+      "pinyin": "huáng",
+      "translations": "노랑"
+    },
+    {
+      "id": 405,
+      "hanzi": "会议",
+      "pinyin": "huì yì",
+      "translations": "회의"
+    },
+    {
+      "id": 406,
+      "hanzi": "或者",
+      "pinyin": "huò zhě",
+      "translations": "~거나, A 혹은 B"
+    },
+    {
+      "id": 407,
+      "hanzi": "机会",
+      "pinyin": "jī huì",
+      "translations": "기회"
+    },
+    {
+      "id": 408,
+      "hanzi": "几乎",
+      "pinyin": "jī hū",
+      "translations": "거의"
+    },
+    {
+      "id": 409,
+      "hanzi": "极",
+      "pinyin": "jí",
+      "translations": "정점, 극"
+    },
+    {
+      "id": 410,
+      "hanzi": "记得",
+      "pinyin": "jì de",
+      "translations": "기억하다"
+    },
+    {
+      "id": 411,
+      "hanzi": "季节",
+      "pinyin": "jì jié",
+      "translations": "계절"
+    },
+    {
+      "id": 412,
+      "hanzi": "检查",
+      "pinyin": "jiǎn chá",
+      "translations": "검사하다"
+    },
+    {
+      "id": 413,
+      "hanzi": "简单",
+      "pinyin": "jiǎn dān",
+      "translations": "간단하다"
+    },
+    {
+      "id": 414,
+      "hanzi": "见面",
+      "pinyin": "jiàn miàn",
+      "translations": "만나다"
+    },
+    {
+      "id": 415,
+      "hanzi": "健康",
+      "pinyin": "jiàn kāng",
+      "translations": "건강(하다)"
+    },
+    {
+      "id": 416,
+      "hanzi": "讲",
+      "pinyin": "jiǎng",
+      "translations": "이야기하다"
+    },
+    {
+      "id": 417,
+      "hanzi": "教",
+      "pinyin": "jiāo",
+      "translations": "가르치다"
+    },
+    {
+      "id": 418,
+      "hanzi": "脚",
+      "pinyin": "jiǎo",
+      "translations": "발"
+    },
+    {
+      "id": 419,
+      "hanzi": "角",
+      "pinyin": "jiǎo",
+      "translations": "각, 뿔"
+    },
+    {
+      "id": 420,
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "translations": "받다, 가까이 가다, 연결하다"
+    },
+    {
+      "id": 421,
+      "hanzi": "街道",
+      "pinyin": "jiē dào",
+      "translations": "거리"
+    },
+    {
+      "id": 422,
+      "hanzi": "节目",
+      "pinyin": "jié mù",
+      "translations": "프로그램"
+    },
+    {
+      "id": 423,
+      "hanzi": "节日",
+      "pinyin": "jié rì",
+      "translations": "기념일, 명절"
+    },
+    {
+      "id": 424,
+      "hanzi": "结婚",
+      "pinyin": "jié hūn",
+      "translations": "결혼하다"
+    },
+    {
+      "id": 425,
+      "hanzi": "结束",
+      "pinyin": "jié shù",
+      "translations": "끝나다"
+    },
+    {
+      "id": 426,
+      "hanzi": "解决",
+      "pinyin": "jiě jué",
+      "translations": "해결하다"
+    },
+    {
+      "id": 427,
+      "hanzi": "借",
+      "pinyin": "jiè",
+      "translations": "빌리다, 빌려주다"
+    },
+    {
+      "id": 428,
+      "hanzi": "经常",
+      "pinyin": "jīng cháng",
+      "translations": "항상"
+    },
+    {
+      "id": 429,
+      "hanzi": "经过",
+      "pinyin": "jīng guò",
+      "translations": "지나다, 통과하다"
+    },
+    {
+      "id": 430,
+      "hanzi": "经理",
+      "pinyin": "jīng lǐ",
+      "translations": "사장"
+    },
+    {
+      "id": 431,
+      "hanzi": "久",
+      "pinyin": "jiǔ",
+      "translations": "(시간이) 길다"
+    },
+    {
+      "id": 432,
+      "hanzi": "旧",
+      "pinyin": "jiù",
+      "translations": "옛날의"
+    },
+    {
+      "id": 433,
+      "hanzi": "举行",
+      "pinyin": "jǔ xíng",
+      "translations": "개최하다"
+    },
+    {
+      "id": 434,
+      "hanzi": "句子",
+      "pinyin": "jù zi",
+      "translations": "문장"
+    },
+    {
+      "id": 435,
+      "hanzi": "决定",
+      "pinyin": "jué dìng",
+      "translations": "결정하다"
+    },
+    {
+      "id": 436,
+      "hanzi": "渴",
+      "pinyin": "kě",
+      "translations": "목이 마르다"
+    },
+    {
+      "id": 437,
+      "hanzi": "可爱",
+      "pinyin": "kě ài",
+      "translations": "귀엽다, 사랑스럽다"
+    },
+    {
+      "id": 438,
+      "hanzi": "刻",
+      "pinyin": "kè",
+      "translations": "15분"
+    },
+    {
+      "id": 439,
+      "hanzi": "客人",
+      "pinyin": "kè rén",
+      "translations": "손님"
+    },
+    {
+      "id": 440,
+      "hanzi": "空调",
+      "pinyin": "kōng tiáo",
+      "translations": "에어컨"
+    },
+    {
+      "id": 441,
+      "hanzi": "口",
+      "pinyin": "kǒu",
+      "translations": "입, 명"
+    },
+    {
+      "id": 442,
+      "hanzi": "哭",
+      "pinyin": "kū",
+      "translations": "울다"
+    },
+    {
+      "id": 443,
+      "hanzi": "裤子",
+      "pinyin": "kù zi",
+      "translations": "바지"
+    },
+    {
+      "id": 444,
+      "hanzi": "筷子",
+      "pinyin": "kuài zi",
+      "translations": "젓가락"
+    },
+    {
+      "id": 445,
+      "hanzi": "蓝",
+      "pinyin": "lán",
+      "translations": "남색의"
+    },
+    {
+      "id": 446,
+      "hanzi": "老",
+      "pinyin": "lǎo",
+      "translations": "늙다"
+    },
+    {
+      "id": 447,
+      "hanzi": "离开",
+      "pinyin": "lí kāi",
+      "translations": "떠나다"
+    },
+    {
+      "id": 448,
+      "hanzi": "礼物",
+      "pinyin": "lǐ wù",
+      "translations": "선물"
+    },
+    {
+      "id": 449,
+      "hanzi": "历史",
+      "pinyin": "lì shǐ",
+      "translations": "역사"
+    },
+    {
+      "id": 450,
+      "hanzi": "脸",
+      "pinyin": "liǎn",
+      "translations": "얼굴"
+    },
+    {
+      "id": 451,
+      "hanzi": "练习",
+      "pinyin": "liàn xí",
+      "translations": "연습(하다)"
+    },
+    {
+      "id": 452,
+      "hanzi": "辆",
+      "pinyin": "liàng",
+      "translations": "대(차를 세는 양사)"
+    },
+    {
+      "id": 453,
+      "hanzi": "了解",
+      "pinyin": "liǎo jiě",
+      "translations": "이해하다"
+    },
+    {
+      "id": 454,
+      "hanzi": "邻居",
+      "pinyin": "lín jū",
+      "translations": "이웃"
+    },
+    {
+      "id": 455,
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "translations": "층"
+    },
+    {
+      "id": 456,
+      "hanzi": "绿",
+      "pinyin": "lǜ",
+      "translations": "초록색"
+    },
+    {
+      "id": 457,
+      "hanzi": "马",
+      "pinyin": "mǎ",
+      "translations": "말"
+    },
+    {
+      "id": 458,
+      "hanzi": "马上",
+      "pinyin": "mǎ shàng",
+      "translations": "즉시"
+    },
+    {
+      "id": 459,
+      "hanzi": "满意",
+      "pinyin": "mǎn yì",
+      "translations": "만족하다"
+    },
+    {
+      "id": 460,
+      "hanzi": "帽子",
+      "pinyin": "mào zi",
+      "translations": "모자"
+    },
+    {
+      "id": 461,
+      "hanzi": "米",
+      "pinyin": "mǐ",
+      "translations": "쌀, 미터"
+    },
+    {
+      "id": 462,
+      "hanzi": "面包",
+      "pinyin": "miàn bāo",
+      "translations": "빵"
+    },
+    {
+      "id": 463,
+      "hanzi": "面条",
+      "pinyin": "miàn tiáo",
+      "translations": "국수"
+    },
+    {
+      "id": 464,
+      "hanzi": "明白",
+      "pinyin": "míng bai",
+      "translations": "이해하다, 명백하다"
+    },
+    {
+      "id": 465,
+      "hanzi": "拿",
+      "pinyin": "ná",
+      "translations": "잡다"
+    },
+    {
+      "id": 466,
+      "hanzi": "奶奶",
+      "pinyin": "nǎi nai",
+      "translations": "할머니"
+    },
+    {
+      "id": 467,
+      "hanzi": "南",
+      "pinyin": "nán",
+      "translations": "남쪽"
+    },
+    {
+      "id": 468,
+      "hanzi": "难",
+      "pinyin": "nán",
+      "translations": "어렵다"
+    },
+    {
+      "id": 469,
+      "hanzi": "难过",
+      "pinyin": "nán guò",
+      "translations": "괴롭다, 슬프다"
+    },
+    {
+      "id": 470,
+      "hanzi": "年级",
+      "pinyin": "nián jí",
+      "translations": "학년"
+    },
+    {
+      "id": 471,
+      "hanzi": "年轻",
+      "pinyin": "nián qīng",
+      "translations": "젊다"
+    },
+    {
+      "id": 472,
+      "hanzi": "鸟",
+      "pinyin": "niǎo",
+      "translations": "새"
+    },
+    {
+      "id": 473,
+      "hanzi": "努力",
+      "pinyin": "nǔ lì",
+      "translations": "노력하다"
+    },
+    {
+      "id": 474,
+      "hanzi": "爬山",
+      "pinyin": "pá shān",
+      "translations": "등산하다"
+    },
+    {
+      "id": 475,
+      "hanzi": "盘子",
+      "pinyin": "pán zi",
+      "translations": "쟁반"
+    },
+    {
+      "id": 476,
+      "hanzi": "胖",
+      "pinyin": "pàng",
+      "translations": "뚱뚱하다"
+    },
+    {
+      "id": 477,
+      "hanzi": "啤酒",
+      "pinyin": "pí jiǔ",
+      "translations": "맥주하다"
+    },
+    {
+      "id": 478,
+      "hanzi": "葡萄",
+      "pinyin": "pú tao",
+      "translations": "포도"
+    },
+    {
+      "id": 479,
+      "hanzi": "普通话",
+      "pinyin": "pǔ tōng huà",
+      "translations": "보통화"
+    },
+    {
+      "id": 480,
+      "hanzi": "骑",
+      "pinyin": "qí",
+      "translations": "(자전거, 동물을) 타다"
+    },
+    {
+      "id": 481,
+      "hanzi": "其实",
+      "pinyin": "qí shí",
+      "translations": "사실은"
+    },
+    {
+      "id": 482,
+      "hanzi": "其他",
+      "pinyin": "qí tā",
+      "translations": "기타, 그 외"
+    },
+    {
+      "id": 483,
+      "hanzi": "奇怪",
+      "pinyin": "qí guài",
+      "translations": "이상하다"
+    },
+    {
+      "id": 484,
+      "hanzi": "铅笔",
+      "pinyin": "qiān bǐ",
+      "translations": "연필"
+    },
+    {
+      "id": 485,
+      "hanzi": "清楚",
+      "pinyin": "qīng chu",
+      "translations": "분명하다, 명백하다"
+    },
+    {
+      "id": 486,
+      "hanzi": "秋",
+      "pinyin": "qiū",
+      "translations": "가을"
+    },
+    {
+      "id": 487,
+      "hanzi": "裙子",
+      "pinyin": "qún zi",
+      "translations": "치마"
+    },
+    {
+      "id": 488,
+      "hanzi": "然后",
+      "pinyin": "rán hòu",
+      "translations": "이후에"
+    },
+    {
+      "id": 489,
+      "hanzi": "热情",
+      "pinyin": "rè qíng",
+      "translations": "열정적인"
+    },
+    {
+      "id": 490,
+      "hanzi": "认为",
+      "pinyin": "rèn wéi",
+      "translations": "믿다, 생각하다"
+    },
+    {
+      "id": 491,
+      "hanzi": "认真",
+      "pinyin": "rèn zhēn",
+      "translations": "성실하다"
+    },
+    {
+      "id": 492,
+      "hanzi": "容易",
+      "pinyin": "róng yì",
+      "translations": "쉽다"
+    },
+    {
+      "id": 493,
+      "hanzi": "如果",
+      "pinyin": "rú guǒ",
+      "translations": "만약"
+    },
+    {
+      "id": 494,
+      "hanzi": "伞",
+      "pinyin": "sǎn",
+      "translations": "우산"
+    },
+    {
+      "id": 495,
+      "hanzi": "上网",
+      "pinyin": "shàng wǎng",
+      "translations": "인터넷을 하다"
+    },
+    {
+      "id": 496,
+      "hanzi": "生气",
+      "pinyin": "shēng qì",
+      "translations": "화내다"
+    },
+    {
+      "id": 497,
+      "hanzi": "声音",
+      "pinyin": "shēng yīn",
+      "translations": "소리, 목소리"
+    },
+    {
+      "id": 498,
+      "hanzi": "使",
+      "pinyin": "shǐ",
+      "translations": "시키다"
+    },
+    {
+      "id": 499,
+      "hanzi": "世界",
+      "pinyin": "shì jiè",
+      "translations": "세계"
+    },
+    {
+      "id": 500,
+      "hanzi": "瘦",
+      "pinyin": "shòu",
+      "translations": "마르다"
+    },
+    {
+      "id": 501,
+      "hanzi": "舒服",
+      "pinyin": "shū fu",
+      "translations": "편안하다"
+    },
+    {
+      "id": 502,
+      "hanzi": "叔叔",
+      "pinyin": "shū shu",
+      "translations": "숙부, 아저씨"
+    },
+    {
+      "id": 503,
+      "hanzi": "树",
+      "pinyin": "shù",
+      "translations": "재배하다"
+    },
+    {
+      "id": 504,
+      "hanzi": "数学",
+      "pinyin": "shù xué",
+      "translations": "수학"
+    },
+    {
+      "id": 505,
+      "hanzi": "刷",
+      "pinyin": "shuā",
+      "translations": "닦다"
+    },
+    {
+      "id": 506,
+      "hanzi": "双",
+      "pinyin": "shuāng",
+      "translations": "쌍"
+    },
+    {
+      "id": 507,
+      "hanzi": "水平",
+      "pinyin": "shuǐ píng",
+      "translations": "수준"
+    },
+    {
+      "id": 508,
+      "hanzi": "司机",
+      "pinyin": "sī jī",
+      "translations": "운전사"
+    },
+    {
+      "id": 509,
+      "hanzi": "虽然",
+      "pinyin": "suī rán",
+      "translations": "비록 ~지만"
+    },
+    {
+      "id": 510,
+      "hanzi": "太阳",
+      "pinyin": "tài yáng",
+      "translations": "태양"
+    },
+    {
+      "id": 511,
+      "hanzi": "糖",
+      "pinyin": "táng",
+      "translations": "설탕, 사탕"
+    },
+    {
+      "id": 512,
+      "hanzi": "特别",
+      "pinyin": "tè bié",
+      "translations": "특별히"
+    },
+    {
+      "id": 513,
+      "hanzi": "疼",
+      "pinyin": "téng",
+      "translations": "아프다"
+    },
+    {
+      "id": 514,
+      "hanzi": "提高",
+      "pinyin": "tí gāo",
+      "translations": "올리다"
+    },
+    {
+      "id": 515,
+      "hanzi": "体育",
+      "pinyin": "tǐ yù",
+      "translations": "체육, 스포츠"
+    },
+    {
+      "id": 516,
+      "hanzi": "甜",
+      "pinyin": "tián",
+      "translations": "달콤하다"
+    },
+    {
+      "id": 517,
+      "hanzi": "条",
+      "pinyin": "tiáo",
+      "translations": "나뭇가지"
+    },
+    {
+      "id": 518,
+      "hanzi": "同事",
+      "pinyin": "tóng shì",
+      "translations": "동료"
+    },
+    {
+      "id": 519,
+      "hanzi": "同意",
+      "pinyin": "tóng yì",
+      "translations": "동의하다"
+    },
+    {
+      "id": 520,
+      "hanzi": "头发",
+      "pinyin": "tóu fa",
+      "translations": "머리카락"
+    },
+    {
+      "id": 521,
+      "hanzi": "突然",
+      "pinyin": "tū rán",
+      "translations": "갑자기"
+    },
+    {
+      "id": 522,
+      "hanzi": "图书馆",
+      "pinyin": "tú shū guǎn",
+      "translations": "도서관"
+    },
+    {
+      "id": 523,
+      "hanzi": "腿",
+      "pinyin": "tuǐ",
+      "translations": "다리"
+    },
+    {
+      "id": 524,
+      "hanzi": "完成",
+      "pinyin": "wán chéng",
+      "translations": "완성하다"
+    },
+    {
+      "id": 525,
+      "hanzi": "碗",
+      "pinyin": "wǎn",
+      "translations": "그릇, 사발"
+    },
+    {
+      "id": 526,
+      "hanzi": "万",
+      "pinyin": "wàn",
+      "translations": "매우 많은"
+    },
+    {
+      "id": 527,
+      "hanzi": "忘记",
+      "pinyin": "wàng jì",
+      "translations": "잊다"
+    },
+    {
+      "id": 528,
+      "hanzi": "为了",
+      "pinyin": "wèi le",
+      "translations": "~을 위해서"
+    },
+    {
+      "id": 529,
+      "hanzi": "为什么",
+      "pinyin": "wèi shén me",
+      "translations": "왜"
+    },
+    {
+      "id": 530,
+      "hanzi": "位",
+      "pinyin": "wèi",
+      "translations": "위치, 지위"
     }
   ]
 }

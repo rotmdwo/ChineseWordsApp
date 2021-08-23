@@ -82,6 +82,12 @@
                     android:textSize="40sp"
                     android:textColor="#FF0000"
                     android:fontFamily="sans-serif-black" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSpeaker"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/speaker"
+                    android:visibility="gone" />
             </LinearLayout>
 
             <LinearLayout
