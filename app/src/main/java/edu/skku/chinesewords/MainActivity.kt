@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             context.startActivity(starter)
         }
 
-        var cursor = 0
+        val wordTree = WordTree()
         var answerLocation = 0
         lateinit var tts: TextToSpeech
     }
@@ -40,16 +40,17 @@ class MainActivity : AppCompatActivity() {
         val pref = AppPreference.get()
         val words = pref.getAllFromMyWords()
         val iterator = words.keys.iterator()
-        val list = ArrayList<Array<String>>()
 
         while (iterator.hasNext()) {
             val key = iterator.next()
             val value = words.getOrDefault(key, "")
-            if ("" != value) list.add(arrayOf(key, value))
+            if ("" != value) {
+                wordTree.addItem(WordTree.Word(key, value.substring(0, value.indexOf("\n")), value.substring(value.indexOf("\n") + 1)))
+            }
         }
 
         // 랜덤 섞기
-        list.shuffle()
+        wordTree.shuffle()
 
         llAnswer1.setOnClickListener {
             toggleAnswersClickable(false)
@@ -87,7 +88,7 @@ class MainActivity : AppCompatActivity() {
                 llAnswer3.setBackgroundResource(R.color.white)
                 llAnswer4.setBackgroundResource(R.color.white)
 
-                runGame(list)
+                runGame(wordTree)
                 toggleAnswersClickable(true)
             }, 1000)
         }
@@ -127,7 +128,7 @@ class MainActivity : AppCompatActivity() {
                 llAnswer3.setBackgroundResource(R.color.white)
                 llAnswer4.setBackgroundResource(R.color.white)
 
-                runGame(list)
+                runGame(wordTree)
                 toggleAnswersClickable(true)
             }, 1000)
         }
@@ -167,7 +168,7 @@ class MainActivity : AppCompatActivity() {
                 llAnswer3.setBackgroundResource(R.color.white)
                 llAnswer4.setBackgroundResource(R.color.white)
 
-                runGame(list)
+                runGame(wordTree)
                 toggleAnswersClickable(true)
             }, 1000)
         }
@@ -207,13 +208,13 @@ class MainActivity : AppCompatActivity() {
                 llAnswer3.setBackgroundResource(R.color.white)
                 llAnswer4.setBackgroundResource(R.color.white)
 
-                runGame(list)
+                runGame(wordTree)
                 toggleAnswersClickable(true)
             }, 1000)
         }
 
         // 게임 시작
-        runGame(list)
+        runGame(wordTree)
     }
 
     private fun loadAd(adView: AdView) {
@@ -221,13 +222,14 @@ class MainActivity : AppCompatActivity() {
         adView.loadAd(adRequest)
     }
 
-    private fun runGame(list: ArrayList<Array<String>>) {
+    private fun runGame(wordTree: WordTree) {
         when (getRandomNumber1toN(8)) {
             1 -> {
                 // 문제: 한자, 답: 발음
                 setQuestionType(isText = true)
-                val question = list[cursor][0]
-                val answer: String = list[cursor][1].substring(0, list[cursor][1].indexOf("\n"))
+                val word = wordTree.next()
+                val question = word.hanzi
+                val answer = word.pinyin
 
                 tvQuestion.text = question
                 answerLocation = getRandomNumber1toN(4)
@@ -247,9 +249,8 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                var howManyAnswersSet = 1
-                val set = HashSet<Int>()
-                set.add(cursor)
+                val set = HashSet<WordTree.Word>()
+                set.add(word)
                 var i = 1
 
                 while (i <= 4) {
@@ -258,15 +259,12 @@ class MainActivity : AppCompatActivity() {
                         continue
                     }
 
-                    // TODO: 정답의 발음과 같은 음절의 수만 골라서 보여주기
+                    val wrongWord = getRandomWord(word)
 
-                    val index = getRandomNumber1toN(list.size) - 1
+                    if (!set.contains(wrongWord)) {
+                        set.add(wrongWord)
 
-                    if (!set.contains(index)) {
-                        set.add(index)
-
-                        Log.d("asdf", list[index][1])
-                        val answerWrong = list[index][1].substring(0, list[index][1].indexOf("\n"))
+                        val answerWrong = wrongWord.pinyin
 
                         when (i) {
                             1 -> {
@@ -290,8 +288,9 @@ class MainActivity : AppCompatActivity() {
             2 -> {
                 // 문제: 한자, 답: 뜻
                 setQuestionType(isText = true)
-                val question = list[cursor][0]
-                val answer: String = list[cursor][1].substring(list[cursor][1].indexOf("\n") + 1)
+                val word = wordTree.next()
+                val question = word.hanzi
+                val answer = word.translations
 
                 tvQuestion.text = question
                 answerLocation = getRandomNumber1toN(4)
@@ -311,9 +310,8 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                var howManyAnswersSet = 1
-                val set = HashSet<Int>()
-                set.add(cursor)
+                val set = HashSet<WordTree.Word>()
+                set.add(word)
                 var i = 1
 
                 while (i <= 4) {
@@ -322,13 +320,12 @@ class MainActivity : AppCompatActivity() {
                         continue
                     }
 
-                    val index = getRandomNumber1toN(list.size) - 1
+                    val wrongWord = getRandomWord()
 
-                    if (!set.contains(index)) {
-                        set.add(index)
+                    if (!set.contains(wrongWord)) {
+                        set.add(wrongWord)
 
-                        Log.d("asdf", list[index][1])
-                        val answerWrong = list[index][1].substring(list[index][1].indexOf("\n") + 1)
+                        val answerWrong = wrongWord.translations
 
                         when (i) {
                             1 -> {
@@ -352,8 +349,9 @@ class MainActivity : AppCompatActivity() {
             3 -> {
                 // 문제: 발음, 답: 한자
                 setQuestionType(isText = true)
-                val question = list[cursor][1].substring(0, list[cursor][1].indexOf("\n"))
-                val answer: String = list[cursor][0]
+                val word = wordTree.next()
+                val question = word.pinyin
+                val answer = word.hanzi
 
                 tvQuestion.text = question
                 answerLocation = getRandomNumber1toN(4)
@@ -373,9 +371,8 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                var howManyAnswersSet = 1
-                val set = HashSet<Int>()
-                set.add(cursor)
+                val set = HashSet<WordTree.Word>()
+                set.add(word)
                 var i = 1
 
                 while (i <= 4) {
@@ -384,12 +381,12 @@ class MainActivity : AppCompatActivity() {
                         continue
                     }
 
-                    val index = getRandomNumber1toN(list.size) - 1
+                    val wrongWord = getRandomWord(word)
 
-                    if (!set.contains(index)) {
-                        set.add(index)
+                    if (!set.contains(wrongWord)) {
+                        set.add(wrongWord)
 
-                        val answerWrong = list[index][0]
+                        val answerWrong = wrongWord.hanzi
 
                         when (i) {
                             1 -> {
@@ -413,8 +410,9 @@ class MainActivity : AppCompatActivity() {
             4 -> {
                 // 문제: 발음, 답: 뜻
                 setQuestionType(isText = true)
-                val question = list[cursor][1].substring(0, list[cursor][1].indexOf("\n"))
-                val answer: String = list[cursor][1].substring(list[cursor][1].indexOf("\n") + 1)
+                val word = wordTree.next()
+                val question = word.pinyin
+                val answer = word.translations
 
                 tvQuestion.text = question
                 answerLocation = getRandomNumber1toN(4)
@@ -434,9 +432,8 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                var howManyAnswersSet = 1
-                val set = HashSet<Int>()
-                set.add(cursor)
+                val set = HashSet<WordTree.Word>()
+                set.add(word)
                 var i = 1
 
                 while (i <= 4) {
@@ -445,12 +442,12 @@ class MainActivity : AppCompatActivity() {
                         continue
                     }
 
-                    val index = getRandomNumber1toN(list.size) - 1
+                    val wrongWord = getRandomWord()
 
-                    if (!set.contains(index)) {
-                        set.add(index)
+                    if (!set.contains(wrongWord)) {
+                        set.add(wrongWord)
 
-                        val answerWrong = list[index][1].substring(list[index][1].indexOf("\n") + 1)
+                        val answerWrong = wrongWord.translations
 
                         when (i) {
                             1 -> {
@@ -474,8 +471,9 @@ class MainActivity : AppCompatActivity() {
             5 -> {
                 // 문제: 뜻, 답: 한자
                 setQuestionType(isText = true)
-                val question = list[cursor][1].substring(list[cursor][1].indexOf("\n") + 1)
-                val answer: String = list[cursor][0]
+                val word = wordTree.next()
+                val question = word.translations
+                val answer = word.hanzi
 
                 tvQuestion.text = question
                 answerLocation = getRandomNumber1toN(4)
@@ -495,9 +493,8 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                var howManyAnswersSet = 1
-                val set = HashSet<Int>()
-                set.add(cursor)
+                val set = HashSet<WordTree.Word>()
+                set.add(word)
                 var i = 1
 
                 while (i <= 4) {
@@ -506,12 +503,12 @@ class MainActivity : AppCompatActivity() {
                         continue
                     }
 
-                    val index = getRandomNumber1toN(list.size) - 1
+                    val wrongWord = getRandomWord()
 
-                    if (!set.contains(index)) {
-                        set.add(index)
+                    if (!set.contains(wrongWord)) {
+                        set.add(wrongWord)
 
-                        val answerWrong = list[index][0]
+                        val answerWrong = wrongWord.hanzi
 
                         when (i) {
                             1 -> {
@@ -535,8 +532,9 @@ class MainActivity : AppCompatActivity() {
             6 -> {
                 // 문제: 뜻, 답: 발음
                 setQuestionType(isText = true)
-                val question = list[cursor][1].substring(list[cursor][1].indexOf("\n") + 1)
-                val answer: String = list[cursor][1].substring(0, list[cursor][1].indexOf("\n"))
+                val word = wordTree.next()
+                val question = word.translations
+                val answer = word.pinyin
 
                 tvQuestion.text = question
                 answerLocation = getRandomNumber1toN(4)
@@ -556,9 +554,8 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                var howManyAnswersSet = 1
-                val set = HashSet<Int>()
-                set.add(cursor)
+                val set = HashSet<WordTree.Word>()
+                set.add(word)
                 var i = 1
 
                 while (i <= 4) {
@@ -567,12 +564,12 @@ class MainActivity : AppCompatActivity() {
                         continue
                     }
 
-                    val index = getRandomNumber1toN(list.size) - 1
+                    val wrongWord = getRandomWord()
 
-                    if (!set.contains(index)) {
-                        set.add(index)
+                    if (!set.contains(wrongWord)) {
+                        set.add(wrongWord)
 
-                        val answerWrong = list[index][1].substring(0, list[index][1].indexOf("\n"))
+                        val answerWrong = wrongWord.pinyin
 
                         when (i) {
                             1 -> {
@@ -596,7 +593,9 @@ class MainActivity : AppCompatActivity() {
             7 -> {
                 // 문제: 한자발음소리, 답: 한자
                 setQuestionType(isText = false)
-                val question: String = list[cursor][0]
+                val word = wordTree.next()
+                val question = word.hanzi
+                val answer = word.hanzi
                 tts = TextToSpeech(this, TextToSpeech.OnInitListener {
                     if (it != TextToSpeech.ERROR) {
                         tts.language = Locale.SIMPLIFIED_CHINESE
@@ -606,8 +605,6 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 })
-
-                val answer: String = list[cursor][0]
 
                 answerLocation = getRandomNumber1toN(4)
 
@@ -626,9 +623,8 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                var howManyAnswersSet = 1
-                val set = HashSet<Int>()
-                set.add(cursor)
+                val set = HashSet<WordTree.Word>()
+                set.add(word)
                 var i = 1
 
                 while (i <= 4) {
@@ -637,12 +633,12 @@ class MainActivity : AppCompatActivity() {
                         continue
                     }
 
-                    val index = getRandomNumber1toN(list.size) - 1
+                    val wrongWord = getRandomWord(word)
 
-                    if (!set.contains(index)) {
-                        set.add(index)
+                    if (!set.contains(wrongWord)) {
+                        set.add(wrongWord)
 
-                        val answerWrong = list[index][0]
+                        val answerWrong = wrongWord.hanzi
 
                         when (i) {
                             1 -> {
@@ -666,7 +662,9 @@ class MainActivity : AppCompatActivity() {
             8 -> {
                 // 문제: 한자발음소리, 답: 뜻
                 setQuestionType(isText = false)
-                val question: String = list[cursor][0]
+                val word = wordTree.next()
+                val question = word.hanzi
+                val answer = word.translations
                 tts = TextToSpeech(this, TextToSpeech.OnInitListener {
                     if (it != TextToSpeech.ERROR) {
                         tts.language = Locale.SIMPLIFIED_CHINESE
@@ -676,8 +674,6 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 })
-
-                val answer: String = list[cursor][1].substring(list[cursor][1].indexOf("\n") + 1)
 
                 answerLocation = getRandomNumber1toN(4)
 
@@ -696,9 +692,8 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                var howManyAnswersSet = 1
-                val set = HashSet<Int>()
-                set.add(cursor)
+                val set = HashSet<WordTree.Word>()
+                set.add(word)
                 var i = 1
 
                 while (i <= 4) {
@@ -707,12 +702,12 @@ class MainActivity : AppCompatActivity() {
                         continue
                     }
 
-                    val index = getRandomNumber1toN(list.size) - 1
+                    val wrongWord = getRandomWord()
 
-                    if (!set.contains(index)) {
-                        set.add(index)
+                    if (!set.contains(wrongWord)) {
+                        set.add(wrongWord)
 
-                        val answerWrong = list[index][1].substring(list[index][1].indexOf("\n") + 1)
+                        val answerWrong = wrongWord.translations
 
                         when (i) {
                             1 -> {
@@ -734,10 +729,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
-        // 커서 세팅
-        if (cursor < list.size - 1) cursor++
-        else cursor = 0
     }
 
     private fun getRandomNumber1toN(N: Int): Int {
@@ -772,5 +763,34 @@ class MainActivity : AppCompatActivity() {
             tvQuestion.visibility = View.GONE
             ivSpeaker.visibility = View.VISIBLE
         }
+    }
+
+    private fun getRandomWord(word: WordTree.Word): WordTree.Word {
+        return when (word.hanzi.length) {
+            1 -> {
+                if (wordTree.length1List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
+                wordTree.length1List[getRandomNumber1toN(wordTree.length1List.size) - 1]
+            }
+            2 -> {
+                if (wordTree.length2List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
+                wordTree.length2List[getRandomNumber1toN(wordTree.length2List.size) - 1]
+            }
+            3 -> {
+                if (wordTree.length3List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
+                wordTree.length3List[getRandomNumber1toN(wordTree.length3List.size) - 1]
+            }
+            4 -> {
+                if (wordTree.length4List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
+                wordTree.length4List[getRandomNumber1toN(wordTree.length4List.size) - 1]
+            }
+            else -> {
+                if (wordTree.length4List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
+                wordTree.length4List[getRandomNumber1toN(wordTree.length4List.size) - 1]
+            }
+        }
+    }
+
+    private fun getRandomWord(): WordTree.Word {
+        return wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
     }
 }
