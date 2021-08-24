@@ -769,23 +769,23 @@ class MainActivity : AppCompatActivity() {
         return when (word.hanzi.length) {
             1 -> {
                 if (wordTree.length1List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
-                wordTree.length1List[getRandomNumber1toN(wordTree.length1List.size) - 1]
+                else wordTree.length1List[getRandomNumber1toN(wordTree.length1List.size) - 1]
             }
             2 -> {
                 if (wordTree.length2List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
-                wordTree.length2List[getRandomNumber1toN(wordTree.length2List.size) - 1]
+                else wordTree.length2List[getRandomNumber1toN(wordTree.length2List.size) - 1]
             }
             3 -> {
                 if (wordTree.length3List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
-                wordTree.length3List[getRandomNumber1toN(wordTree.length3List.size) - 1]
+                else wordTree.length3List[getRandomNumber1toN(wordTree.length3List.size) - 1]
             }
             4 -> {
                 if (wordTree.length4List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
-                wordTree.length4List[getRandomNumber1toN(wordTree.length4List.size) - 1]
+                else wordTree.length4List[getRandomNumber1toN(wordTree.length4List.size) - 1]
             }
             else -> {
                 if (wordTree.length4List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
-                wordTree.length4List[getRandomNumber1toN(wordTree.length4List.size) - 1]
+                else wordTree.length4List[getRandomNumber1toN(wordTree.length4List.size) - 1]
             }
         }
     }
