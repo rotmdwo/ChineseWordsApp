@@ -25,6 +25,12 @@
       "translations": "절반"
     },
     {
+      "id": 310,
+      "hanzi": "办法",
+      "pinyin": "bàn fǎ",
+      "translations": "방법, 수단"
+    },
+    {
       "id": 311,
       "hanzi": "办公室",
       "pinyin": "bàn gōng shì",
@@ -91,10 +97,22 @@
       "translations": "청소하다"
     },
     {
+      "id": 345,
+      "hanzi": "打算",
+      "pinyin": "dǎ suàn",
+      "translations": "계획하다"
+    },
+    {
       "id": 348,
       "hanzi": "蛋糕",
       "pinyin": "dàn gāo",
       "translations": "케이크"
+    },
+    {
+      "id": 351,
+      "hanzi": "灯",
+      "pinyin": "dēng",
+      "translations": "등불"
     },
     {
       "id": 353,
@@ -173,6 +191,12 @@
       "hanzi": "复习",
       "pinyin": "fù xí",
       "translations": "복습하다"
+    },
+    {
+      "id": 382,
+      "hanzi": "更",
+      "pinyin": "gèng",
+      "translations": "더 ~하다, 더욱"
     },
     {
       "id": 386,
@@ -259,10 +283,22 @@
       "translations": "간단하다"
     },
     {
+      "id": 414,
+      "hanzi": "见面",
+      "pinyin": "jiàn miàn",
+      "translations": "만나다"
+    },
+    {
       "id": 417,
       "hanzi": "教",
       "pinyin": "jiāo",
       "translations": "가르치다"
+    },
+    {
+      "id": 420,
+      "hanzi": "接",
+      "pinyin": "jiē",
+      "translations": "받다, 가까이 가다, 연결하다"
     },
     {
       "id": 422,
@@ -329,6 +365,12 @@
       "hanzi": "筷子",
       "pinyin": "kuài zi",
       "translations": "젓가락"
+    },
+    {
+      "id": 447,
+      "hanzi": "离开",
+      "pinyin": "lí kāi",
+      "translations": "떠나다"
     },
     {
       "id": 449,
@@ -457,6 +499,12 @@
       "translations": "연필"
     },
     {
+      "id": 490,
+      "hanzi": "认为",
+      "pinyin": "rèn wéi",
+      "translations": "믿다, 생각하다"
+    },
+    {
       "id": 491,
       "hanzi": "认真",
       "pinyin": "rèn zhēn",
@@ -541,6 +589,12 @@
       "translations": "동료"
     },
     {
+      "id": 519,
+      "hanzi": "同意",
+      "pinyin": "tóng yì",
+      "translations": "동의하다"
+    },
+    {
       "id": 522,
       "hanzi": "图书馆",
       "pinyin": "tú shū guǎn",
@@ -589,6 +643,12 @@
       "translations": "바나나"
     },
     {
+      "id": 540,
+      "hanzi": "相信",
+      "pinyin": "xiāng xìn",
+      "translations": "믿다"
+    },
+    {
       "id": 543,
       "hanzi": "校长",
       "pinyin": "xiào zhǎng",
@@ -613,6 +673,12 @@
       "translations": "판다"
     },
     {
+      "id": 554,
+      "hanzi": "要求",
+      "pinyin": "yāo qiú",
+      "translations": "요구하다"
+    },
+    {
       "id": 555,
       "hanzi": "爷爷",
       "pinyin": "yé ye",
@@ -631,6 +697,12 @@
       "translations": "같다"
     },
     {
+      "id": 565,
+      "hanzi": "一直",
+      "pinyin": "yī zhí",
+      "translations": "똑바로"
+    },
+    {
       "id": 566,
       "hanzi": "音乐",
       "pinyin": "yīn yuè",
@@ -647,6 +719,12 @@
       "hanzi": "应该",
       "pinyin": "yīng gāi",
       "translations": "~해야 한다"
+    },
+    {
+      "id": 569,
+      "hanzi": "影响",
+      "pinyin": "yǐng xiǎng",
+      "translations": "영향을 주다, 영향"
     },
     {
       "id": 570,
@@ -677,6 +755,12 @@
       "hanzi": "周末",
       "pinyin": "zhōu mò",
       "translations": "주말"
+    },
+    {
+      "id": 591,
+      "hanzi": "主要",
+      "pinyin": "zhǔ yào",
+      "translations": "주요하다, 주로"
     },
     {
       "id": 592,
