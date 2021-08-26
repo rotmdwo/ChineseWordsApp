@@ -55,6 +55,12 @@
       "translations": "~에서야"
     },
     {
+      "id": 328,
+      "hanzi": "菜单",
+      "pinyin": "cài dān",
+      "translations": "메뉴판"
+    },
+    {
       "id": 331,
       "hanzi": "层",
       "pinyin": "céng",
@@ -71,6 +77,12 @@
       "hanzi": "超市",
       "pinyin": "chāo shì",
       "translations": "슈퍼마켓"
+    },
+    {
+      "id": 334,
+      "hanzi": "衬衫",
+      "pinyin": "chèn shān",
+      "translations": "셔츠"
     },
     {
       "id": 335,
@@ -193,6 +205,12 @@
       "translations": "복습하다"
     },
     {
+      "id": 377,
+      "hanzi": "敢",
+      "pinyin": "gǎn",
+      "translations": "~할 용기가 있다, 감히 ~하다"
+    },
+    {
       "id": 382,
       "hanzi": "更",
       "pinyin": "gèng",
@@ -241,10 +259,22 @@
       "translations": "그리다"
     },
     {
+      "id": 401,
+      "hanzi": "坏",
+      "pinyin": "huài",
+      "translations": "나쁘다"
+    },
+    {
       "id": 402,
       "hanzi": "环境",
       "pinyin": "huán jìng",
       "translations": "환경"
+    },
+    {
+      "id": 403,
+      "hanzi": "换",
+      "pinyin": "huàn",
+      "translations": "교환하다"
     },
     {
       "id": 404,
@@ -298,7 +328,7 @@
       "id": 420,
       "hanzi": "接",
       "pinyin": "jiē",
-      "translations": "받다, 가까이 가다, 연결하다"
+      "translations": "받다, 마중나가다, 가까이 가다, 연결하다"
     },
     {
       "id": 422,
@@ -337,6 +367,12 @@
       "translations": "목이 마르다"
     },
     {
+      "id": 437,
+      "hanzi": "可爱",
+      "pinyin": "kě ài",
+      "translations": "귀엽다, 사랑스럽다"
+    },
+    {
       "id": 438,
       "hanzi": "刻",
       "pinyin": "kè",
@@ -359,6 +395,12 @@
       "hanzi": "口",
       "pinyin": "kǒu",
       "translations": "입, 명"
+    },
+    {
+      "id": 443,
+      "hanzi": "裤子",
+      "pinyin": "kù zi",
+      "translations": "바지"
     },
     {
       "id": 444,
@@ -415,6 +457,18 @@
       "translations": "즉시"
     },
     {
+      "id": 459,
+      "hanzi": "满意",
+      "pinyin": "mǎn yì",
+      "translations": "만족하다"
+    },
+    {
+      "id": 460,
+      "hanzi": "帽子",
+      "pinyin": "mào zi",
+      "translations": "모자"
+    },
+    {
       "id": 461,
       "hanzi": "米",
       "pinyin": "mǐ",
@@ -425,6 +479,12 @@
       "hanzi": "面包",
       "pinyin": "miàn bāo",
       "translations": "빵"
+    },
+    {
+      "id": 463,
+      "hanzi": "面条",
+      "pinyin": "miàn tiáo",
+      "translations": "국수"
     },
     {
       "id": 464,
@@ -499,6 +559,18 @@
       "translations": "연필"
     },
     {
+      "id": 487,
+      "hanzi": "裙子",
+      "pinyin": "qún zi",
+      "translations": "치마"
+    },
+    {
+      "id": 489,
+      "hanzi": "热情",
+      "pinyin": "rè qíng",
+      "translations": "친절하다, 열정적이다"
+    },
+    {
       "id": 490,
       "hanzi": "认为",
       "pinyin": "rèn wéi",
@@ -521,6 +593,12 @@
       "hanzi": "如果",
       "pinyin": "rú guǒ",
       "translations": "만약"
+    },
+    {
+      "id": 494,
+      "hanzi": "伞",
+      "pinyin": "sǎn",
+      "translations": "우산"
     },
     {
       "id": 495,
@@ -583,6 +661,12 @@
       "translations": "달콤하다"
     },
     {
+      "id": 517,
+      "hanzi": "条",
+      "pinyin": "tiáo",
+      "translations": "바지/치마를 세는 단위, 나뭇가지"
+    },
+    {
       "id": 518,
       "hanzi": "同事",
       "pinyin": "tóng shì",
@@ -595,6 +679,12 @@
       "translations": "동의하다"
     },
     {
+      "id": 521,
+      "hanzi": "突然",
+      "pinyin": "tū rán",
+      "translations": "갑자기"
+    },
+    {
       "id": 522,
       "hanzi": "图书馆",
       "pinyin": "tú shū guǎn",
@@ -605,6 +695,12 @@
       "hanzi": "完成",
       "pinyin": "wán chéng",
       "translations": "완성하다"
+    },
+    {
+      "id": 525,
+      "hanzi": "碗",
+      "pinyin": "wǎn",
+      "translations": "그릇, 사발"
     },
     {
       "id": 527,
@@ -673,6 +769,18 @@
       "translations": "판다"
     },
     {
+      "id": 551,
+      "hanzi": "需要",
+      "pinyin": "xū yào",
+      "translations": "필요로 하다, 요구하다"
+    },
+    {
+      "id": 552,
+      "hanzi": "选择",
+      "pinyin": "xuǎn zé",
+      "translations": "선택하다"
+    },
+    {
       "id": 554,
       "hanzi": "要求",
       "pinyin": "yāo qiú",
@@ -695,6 +803,12 @@
       "hanzi": "一样",
       "pinyin": "yī yàng",
       "translations": "같다"
+    },
+    {
+      "id": 563,
+      "hanzi": "一般",
+      "pinyin": "yī bān",
+      "translations": "보통이다, 같다"
     },
     {
       "id": 565,

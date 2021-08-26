@@ -166,7 +166,7 @@
       "id": 328,
       "hanzi": "菜单",
       "pinyin": "cài dān",
-      "translations": "메뉴"
+      "translations": "메뉴판"
     },
     {
       "id": 329,
@@ -454,7 +454,7 @@
       "id": 377,
       "hanzi": "敢",
       "pinyin": "gǎn",
-      "translations": "용기가 있다"
+      "translations": "~할 용기가 있다, 감히 ~하다"
     },
     {
       "id": 378,
@@ -712,7 +712,7 @@
       "id": 420,
       "hanzi": "接",
       "pinyin": "jiē",
-      "translations": "받다, 가까이 가다, 연결하다"
+      "translations": "받다, 마중나가다, 가까이 가다, 연결하다"
     },
     {
       "id": 421,
@@ -1126,7 +1126,7 @@
       "id": 489,
       "hanzi": "热情",
       "pinyin": "rè qíng",
-      "translations": "열정적인"
+      "translations": "친절하다, 열정적이다"
     },
     {
       "id": 490,
@@ -1294,7 +1294,7 @@
       "id": 517,
       "hanzi": "条",
       "pinyin": "tiáo",
-      "translations": "나뭇가지"
+      "translations": "바지/치마를 세는 단위, 나뭇가지"
     },
     {
       "id": 518,
@@ -1498,7 +1498,7 @@
       "id": 551,
       "hanzi": "需要",
       "pinyin": "xū yào",
-      "translations": "원하다, 요구하다"
+      "translations": "필요로 하다, 요구하다"
     },
     {
       "id": 552,
@@ -1570,7 +1570,7 @@
       "id": 563,
       "hanzi": "一般",
       "pinyin": "yī bān",
-      "translations": "같다"
+      "translations": "보통이다, 같다"
     },
     {
       "id": 564,
