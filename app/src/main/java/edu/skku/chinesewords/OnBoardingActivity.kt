@@ -98,7 +98,7 @@ class OnBoardingActivity : AppCompatActivity() {
                     val pinyin = wordObject.getString("pinyin")
                     val translations = wordObject.getString("translations")
 
-                    pref.setWordAtHSK3(hanzi, "${pinyin}\n${translations}")
+                    pref.setWordAtHSK3(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
                 }
             } catch (e: IOException) {
                 e.printStackTrace()
@@ -146,7 +146,7 @@ class OnBoardingActivity : AppCompatActivity() {
                     val pinyin = wordObject.getString("pinyin")
                     val translations = wordObject.getString("translations")
 
-                    pref.setWordAtMyWords(hanzi, "${pinyin}\n${translations}")
+                    pref.setWordAtMyWords(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
                 }
             } catch (e: IOException) {
                 e.printStackTrace()

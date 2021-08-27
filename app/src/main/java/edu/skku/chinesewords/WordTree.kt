@@ -4,6 +4,7 @@ import java.util.*
 
 class WordTree {
     val allList = ArrayList<Word>()
+    val questionList = ArrayList<Word>()
     val length1List = ArrayList<Word>()
     val length2List = ArrayList<Word>()
     val length3List = ArrayList<Word>()
@@ -12,11 +13,27 @@ class WordTree {
     var currentIndex = 0
 
     fun shuffle() {
-        allList.shuffle()
+        questionList.shuffle()
     }
 
     fun addItem(word: Word) {
         allList.add(word)
+
+        when ((word.accurateRatio * 100).toInt()) {
+            in 0..24 -> {
+                for (i in 1..4) questionList.add(word)
+            }
+            in 25..49 -> {
+                for (i in 1..3) questionList.add(word)
+            }
+            in 50..74 -> {
+                questionList.add(word)
+                questionList.add(word)
+            }
+            in 75..100 -> {
+                questionList.add(word)
+            }
+        }
 
         when (word.hanzi.length) {
             1 -> length1List.add(word)
@@ -28,10 +45,10 @@ class WordTree {
     }
 
     fun next(): Word {
-        if (currentIndex >= allList.size) currentIndex = 0
+        if (currentIndex >= questionList.size) currentIndex = 0
 
-        return allList[currentIndex++]
+        return questionList[currentIndex++]
     }
 
-    class Word(val hanzi: String, val pinyin: String, val translations: String)
+    class Word(val hanzi: String, val pinyin: String, val translations: String, var correct: Int, var wrong: Int, var accurateRatio: Double)
 }

@@ -13,6 +13,7 @@ import com.google.android.gms.ads.AdView
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Math.abs
 import java.util.*
+import edu.skku.chinesewords.WordTree.Word
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,9 +25,12 @@ class MainActivity : AppCompatActivity() {
             context.startActivity(starter)
         }
 
+        lateinit var currentWord: Word
         val wordTree = WordTree()
         var answerLocation = 0
         lateinit var tts: TextToSpeech
+
+        val pref = AppPreference.get()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,7 +49,11 @@ class MainActivity : AppCompatActivity() {
             val key = iterator.next()
             val value = words.getOrDefault(key, "")
             if ("" != value) {
-                wordTree.addItem(WordTree.Word(key, value.substring(0, value.indexOf("\n")), value.substring(value.indexOf("\n") + 1)))
+                val pinyin: String = value.substring(0, value.indexOf("\n"))
+                val translations: String = value.substring(value.indexOf("\n") + 1, value.indexOf("\r"))
+                val correct = value.substring(value.indexOf("\r") + 1, value.indexOf("\t")).toInt()
+                val wrong = value.substring(value.indexOf("\t") + 1).toInt()
+                wordTree.addItem(Word(key, pinyin, translations, correct, wrong, if (correct == 0 && wrong == 0) 0.0 else if (wrong == 0) 1.0 else correct / (correct + wrong).toDouble()))
             }
         }
 
@@ -61,21 +69,25 @@ class MainActivity : AppCompatActivity() {
                     ivCorrect.visibility = View.VISIBLE
                     ivIncorrect.visibility = View.INVISIBLE
                     llAnswer1.setBackgroundResource(R.color.color_5ec8df)
+                    markCorrect(currentWord)
                 }
                 2 -> {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer2.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
                 3 -> {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer3.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
                 4 -> {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer4.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
             }
 
@@ -101,21 +113,25 @@ class MainActivity : AppCompatActivity() {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer1.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
                 2 -> {
                     ivCorrect.visibility = View.VISIBLE
                     ivIncorrect.visibility = View.INVISIBLE
                     llAnswer2.setBackgroundResource(R.color.color_5ec8df)
+                    markCorrect(currentWord)
                 }
                 3 -> {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer3.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
                 4 -> {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer4.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
             }
 
@@ -141,21 +157,25 @@ class MainActivity : AppCompatActivity() {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer1.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
                 2 -> {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer2.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
                 3 -> {
                     ivCorrect.visibility = View.VISIBLE
                     ivIncorrect.visibility = View.INVISIBLE
                     llAnswer3.setBackgroundResource(R.color.color_5ec8df)
+                    markCorrect(currentWord)
                 }
                 4 -> {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer4.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
             }
 
@@ -181,21 +201,25 @@ class MainActivity : AppCompatActivity() {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer1.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
                 2 -> {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer2.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
                 3 -> {
                     ivCorrect.visibility = View.INVISIBLE
                     ivIncorrect.visibility = View.VISIBLE
                     llAnswer3.setBackgroundResource(R.color.color_5ec8df)
+                    markWrong(currentWord)
                 }
                 4 -> {
                     ivCorrect.visibility = View.VISIBLE
                     ivIncorrect.visibility = View.INVISIBLE
                     llAnswer4.setBackgroundResource(R.color.color_5ec8df)
+                    markCorrect(currentWord)
                 }
             }
 
@@ -228,6 +252,7 @@ class MainActivity : AppCompatActivity() {
                 // 문제: 한자, 답: 발음
                 setQuestionType(isText = true)
                 val word = wordTree.next()
+                currentWord = word
                 val question = word.hanzi
                 val answer = word.pinyin
 
@@ -249,7 +274,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                val set = HashSet<WordTree.Word>()
+                val set = HashSet<Word>()
                 set.add(word)
                 var i = 1
 
@@ -289,6 +314,7 @@ class MainActivity : AppCompatActivity() {
                 // 문제: 한자, 답: 뜻
                 setQuestionType(isText = true)
                 val word = wordTree.next()
+                currentWord = word
                 val question = word.hanzi
                 val answer = word.translations
 
@@ -310,7 +336,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                val set = HashSet<WordTree.Word>()
+                val set = HashSet<Word>()
                 set.add(word)
                 var i = 1
 
@@ -350,6 +376,7 @@ class MainActivity : AppCompatActivity() {
                 // 문제: 발음, 답: 한자
                 setQuestionType(isText = true)
                 val word = wordTree.next()
+                currentWord = word
                 val question = word.pinyin
                 val answer = word.hanzi
 
@@ -371,7 +398,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                val set = HashSet<WordTree.Word>()
+                val set = HashSet<Word>()
                 set.add(word)
                 var i = 1
 
@@ -411,6 +438,7 @@ class MainActivity : AppCompatActivity() {
                 // 문제: 발음, 답: 뜻
                 setQuestionType(isText = true)
                 val word = wordTree.next()
+                currentWord = word
                 val question = word.pinyin
                 val answer = word.translations
 
@@ -432,7 +460,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                val set = HashSet<WordTree.Word>()
+                val set = HashSet<Word>()
                 set.add(word)
                 var i = 1
 
@@ -472,6 +500,7 @@ class MainActivity : AppCompatActivity() {
                 // 문제: 뜻, 답: 한자
                 setQuestionType(isText = true)
                 val word = wordTree.next()
+                currentWord = word
                 val question = word.translations
                 val answer = word.hanzi
 
@@ -493,7 +522,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                val set = HashSet<WordTree.Word>()
+                val set = HashSet<Word>()
                 set.add(word)
                 var i = 1
 
@@ -533,6 +562,7 @@ class MainActivity : AppCompatActivity() {
                 // 문제: 뜻, 답: 발음
                 setQuestionType(isText = true)
                 val word = wordTree.next()
+                currentWord = word
                 val question = word.translations
                 val answer = word.pinyin
 
@@ -554,7 +584,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                val set = HashSet<WordTree.Word>()
+                val set = HashSet<Word>()
                 set.add(word)
                 var i = 1
 
@@ -594,6 +624,7 @@ class MainActivity : AppCompatActivity() {
                 // 문제: 한자발음소리, 답: 한자
                 setQuestionType(isText = false)
                 val word = wordTree.next()
+                currentWord = word
                 val question = word.hanzi
                 val answer = word.hanzi
                 tts = TextToSpeech(this, TextToSpeech.OnInitListener {
@@ -623,7 +654,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                val set = HashSet<WordTree.Word>()
+                val set = HashSet<Word>()
                 set.add(word)
                 var i = 1
 
@@ -663,6 +694,7 @@ class MainActivity : AppCompatActivity() {
                 // 문제: 한자발음소리, 답: 뜻
                 setQuestionType(isText = false)
                 val word = wordTree.next()
+                currentWord = word
                 val question = word.hanzi
                 val answer = word.translations
                 tts = TextToSpeech(this, TextToSpeech.OnInitListener {
@@ -692,7 +724,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
 
-                val set = HashSet<WordTree.Word>()
+                val set = HashSet<Word>()
                 set.add(word)
                 var i = 1
 
@@ -765,7 +797,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun getRandomWord(word: WordTree.Word): WordTree.Word {
+    private fun getRandomWord(word: Word): Word {
         return when (word.hanzi.length) {
             1 -> {
                 if (wordTree.length1List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
@@ -790,7 +822,19 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun getRandomWord(): WordTree.Word {
+    private fun getRandomWord(): Word {
         return wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
+    }
+
+    private fun markCorrect(word: Word) {
+        word.correct++
+        if (word.wrong != 0) word.accurateRatio = word.correct / (word.correct + word.wrong).toDouble()
+        pref.setWordAtMyWords(word.hanzi, "${word.pinyin}\n${word.translations}\r${word.correct}\t${word.wrong}")
+    }
+
+    private fun markWrong(word: Word) {
+        word.wrong++
+        if (word.correct != 0) word.accurateRatio = word.correct / (word.correct + word.wrong).toDouble()
+        pref.setWordAtMyWords(word.hanzi, "${word.pinyin}\n${word.translations}\r${word.correct}\t${word.wrong}")
     }
 }
