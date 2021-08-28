@@ -1,0 +1,304 @@
+{
+  "hsk2": [
+    {
+      "id": 151,
+      "hanzi": "吧",
+      "pinyin": "ba",
+      "translations": "~하자"
+    },
+    {
+      "id": 152,
+      "hanzi": "白",
+      "pinyin": "bái",
+      "translations": "하얀색"
+    },
+    {
+      "id": 153,
+      "hanzi": "百",
+      "pinyin": "bǎi",
+      "translations": "백(100)"
+    },
+    {
+      "id": 154,
+      "hanzi": "帮助",
+      "pinyin": "bāng zhù",
+      "translations": "돕다"
+    },
+    {
+      "id": 155,
+      "hanzi": "报纸",
+      "pinyin": "bào zhǐ",
+      "translations": "신문"
+    },
+    {
+      "id": 156,
+      "hanzi": "比",
+      "pinyin": "bǐ",
+      "translations": "~보다"
+    },
+    {
+      "id": 157,
+      "hanzi": "别",
+      "pinyin": "bié",
+      "translations": "~하지 마라"
+    },
+    {
+      "id": 158,
+      "hanzi": "长",
+      "pinyin": "cháng",
+      "translations": "길다"
+    },
+    {
+      "id": 159,
+      "hanzi": "唱歌",
+      "pinyin": "chàng gē",
+      "translations": "노래 부르다"
+    },
+    {
+      "id": 160,
+      "hanzi": "出",
+      "pinyin": "chū",
+      "translations": "나가다"
+    },
+    {
+      "id": 161,
+      "hanzi": "穿",
+      "pinyin": "chuān",
+      "translations": "구멍을 뚫다, 입다, 신다"
+    },
+    {
+      "id": 162,
+      "hanzi": "船",
+      "pinyin": "chuán",
+      "translations": "배"
+    },
+    {
+      "id": 163,
+      "hanzi": "次",
+      "pinyin": "cì",
+      "translations": "두 번째의"
+    },
+    {
+      "id": 164,
+      "hanzi": "从",
+      "pinyin": "cóng",
+      "translations": "좇다, 따르다"
+    },
+    {
+      "id": 165,
+      "hanzi": "错",
+      "pinyin": "cuò",
+      "translations": "나쁘다, 틀리다"
+    },
+    {
+      "id": 166,
+      "hanzi": "打篮球",
+      "pinyin": "dá lán qiú",
+      "translations": "농구하다"
+    },
+    {
+      "id": 167,
+      "hanzi": "大家",
+      "pinyin": "dà jiā",
+      "translations": "여러분"
+    },
+    {
+      "id": 168,
+      "hanzi": "但是",
+      "pinyin": "dàn shì",
+      "translations": "그러나"
+    },
+    {
+      "id": 169,
+      "hanzi": "到",
+      "pinyin": "dào",
+      "translations": "도착하다"
+    },
+    {
+      "id": 170,
+      "hanzi": "得",
+      "pinyin": "de",
+      "translations": "(동사와 정도보어 사이에) ~하게"
+    },
+    {
+      "id": 171,
+      "hanzi": "得",
+      "pinyin": "děi",
+      "translations": "해야 한다"
+    },
+    {
+      "id": 172,
+      "hanzi": "弟弟",
+      "pinyin": "dì di",
+      "translations": "남동생"
+    },
+    {
+      "id": 173,
+      "hanzi": "第一",
+      "pinyin": "dì yī",
+      "translations": "첫 번째"
+    },
+    {
+      "id": 174,
+      "hanzi": "懂",
+      "pinyin": "dǒng",
+      "translations": "이해하다"
+    },
+    {
+      "id": 175,
+      "hanzi": "房间",
+      "pinyin": "fáng jiān",
+      "translations": "방"
+    },
+    {
+      "id": 176,
+      "hanzi": "非常",
+      "pinyin": "fēi cháng",
+      "translations": "매우"
+    },
+    {
+      "id": 177,
+      "hanzi": "服务员",
+      "pinyin": "fú wù yuán",
+      "translations": "종업원"
+    },
+    {
+      "id": 178,
+      "hanzi": "高",
+      "pinyin": "gāo",
+      "translations": "높다, 크다"
+    },
+    {
+      "id": 179,
+      "hanzi": "告诉",
+      "pinyin": "gào su",
+      "translations": "말하다, 알리다"
+    },
+    {
+      "id": 180,
+      "hanzi": "哥哥",
+      "pinyin": "gē ge",
+      "translations": "형"
+    },
+    {
+      "id": 181,
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "translations": "주다"
+    },
+    {
+      "id": 182,
+      "hanzi": "公共汽车",
+      "pinyin": "gōng gòng qì chē",
+      "translations": "버스"
+    },
+    {
+      "id": 183,
+      "hanzi": "公斤",
+      "pinyin": "gōng jīn",
+      "translations": "킬로그램(kg)"
+    },
+    {
+      "id": 184,
+      "hanzi": "公司",
+      "pinyin": "gōng sī",
+      "translations": "회사"
+    },
+    {
+      "id": 185,
+      "hanzi": "贵",
+      "pinyin": "guì",
+      "translations": "비싼"
+    },
+    {
+      "id": 186,
+      "hanzi": "还",
+      "pinyin": "hái",
+      "translations": "아직"
+    },
+    {
+      "id": 187,
+      "hanzi": "孩子",
+      "pinyin": "hái zi",
+      "translations": "아이, 자녀"
+    },
+    {
+      "id": 188,
+      "hanzi": "好吃",
+      "pinyin": "hǎo chī",
+      "translations": "맛있다"
+    },
+    {
+      "id": 189,
+      "hanzi": "号",
+      "pinyin": "hào",
+      "translations": "이름, 호"
+    },
+    {
+      "id": 190,
+      "hanzi": "黑",
+      "pinyin": "hēi",
+      "translations": "검정색"
+    },
+    {
+      "id": 191,
+      "hanzi": "红",
+      "pinyin": "hóng",
+      "translations": "빨간색"
+    },
+    {
+      "id": 192,
+      "hanzi": "欢迎",
+      "pinyin": "huān yíng",
+      "translations": "환영하다"
+    },
+    {
+      "id": 193,
+      "hanzi": "还",
+      "pinyin": "huán",
+      "translations": "돌아가다, 되갚다"
+    },
+    {
+      "id": 194,
+      "hanzi": "回答",
+      "pinyin": "huí dá",
+      "translations": "대답하다"
+    },
+    {
+      "id": 195,
+      "hanzi": "机场",
+      "pinyin": "jī chǎng",
+      "translations": "공항"
+    },
+    {
+      "id": 196,
+      "hanzi": "鸡蛋",
+      "pinyin": "jī dàn",
+      "translations": "달걀"
+    },
+    {
+      "id": 197,
+      "hanzi": "件",
+      "pinyin": "jiàn",
+      "translations": "옷, 일을 세는 양사"
+    },
+    {
+      "id": 198,
+      "hanzi": "教室",
+      "pinyin": "jiào shì",
+      "translations": "교실"
+    },
+    {
+      "id": 199,
+      "hanzi": "姐姐",
+      "pinyin": "jiě jie",
+      "translations": "여동생"
+    },
+    {
+      "id": 200,
+      "hanzi": "介绍",
+      "pinyin": "jiè shào",
+      "translations": "소개하다"
+    }
+  ]
+}
