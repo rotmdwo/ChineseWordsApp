@@ -262,7 +262,7 @@
       "id": 204,
       "hanzi": "觉得",
       "pinyin": "jué de",
-      "translations": "~라고 느끼"
+      "translations": "~라고 느끼다"
     },
     {
       "id": 205,
@@ -523,6 +523,12 @@
       "translations": "비교하다, 비교적"
     },
     {
+      "id": 321,
+      "hanzi": "变化",
+      "pinyin": "biàn huà",
+      "translations": "변화(하다)"
+    },
+    {
       "id": 326,
       "hanzi": "冰箱",
       "pinyin": "bīng xiāng",
@@ -583,6 +589,12 @@
       "translations": "주방"
     },
     {
+      "id": 341,
+      "hanzi": "春",
+      "pinyin": "chūn",
+      "translations": "봄"
+    },
+    {
       "id": 344,
       "hanzi": "打扫",
       "pinyin": "dǎ sǎo",
@@ -593,6 +605,18 @@
       "hanzi": "打算",
       "pinyin": "dǎ suàn",
       "translations": "계획하다"
+    },
+    {
+      "id": 346,
+      "hanzi": "带",
+      "pinyin": "dài",
+      "translations": "챙기다, 띠, 밴드"
+    },
+    {
+      "id": 347,
+      "hanzi": "担心",
+      "pinyin": "dān xīn",
+      "translations": "걱정하다"
     },
     {
       "id": 348,
@@ -629,6 +653,12 @@
       "hanzi": "电梯",
       "pinyin": "diàn tī",
       "translations": "엘리베이터"
+    },
+    {
+      "id": 358,
+      "hanzi": "冬",
+      "pinyin": "dōng",
+      "translations": "겨울"
     },
     {
       "id": 360,
@@ -697,6 +727,12 @@
       "translations": "~할 용기가 있다, 감히 ~하다"
     },
     {
+      "id": 378,
+      "hanzi": "感冒",
+      "pinyin": "gǎn mào",
+      "translations": "감기(에 걸리다)"
+    },
+    {
       "id": 379,
       "hanzi": "刚才",
       "pinyin": "gāng cái",
@@ -707,6 +743,12 @@
       "hanzi": "更",
       "pinyin": "gèng",
       "translations": "더 ~하다, 더욱"
+    },
+    {
+      "id": 385,
+      "hanzi": "刮风",
+      "pinyin": "guā fēng",
+      "translations": "바람이 불다"
     },
     {
       "id": 386,
@@ -737,6 +779,12 @@
       "hanzi": "果汁",
       "pinyin": "guǒ zhī",
       "translations": "과일주스"
+    },
+    {
+      "id": 392,
+      "hanzi": "过去",
+      "pinyin": "guò qu",
+      "translations": "지나가다, 죽다"
     },
     {
       "id": 393,
@@ -811,6 +859,12 @@
       "translations": "기억하다"
     },
     {
+      "id": 411,
+      "hanzi": "季节",
+      "pinyin": "jì jié",
+      "translations": "계절"
+    },
+    {
       "id": 413,
       "hanzi": "简单",
       "pinyin": "jiǎn dān",
@@ -839,6 +893,18 @@
       "hanzi": "节目",
       "pinyin": "jié mù",
       "translations": "프로그램"
+    },
+    {
+      "id": 423,
+      "hanzi": "节日",
+      "pinyin": "jié rì",
+      "translations": "기념일, 명절"
+    },
+    {
+      "id": 424,
+      "hanzi": "结婚",
+      "pinyin": "jié hūn",
+      "translations": "결혼하다"
     },
     {
       "id": 425,
@@ -1069,6 +1135,12 @@
       "translations": "연필"
     },
     {
+      "id": 486,
+      "hanzi": "秋",
+      "pinyin": "qiū",
+      "translations": "가을"
+    },
+    {
       "id": 487,
       "hanzi": "裙子",
       "pinyin": "qún zi",
@@ -1117,6 +1189,18 @@
       "translations": "인터넷을 하다"
     },
     {
+      "id": 501,
+      "hanzi": "舒服",
+      "pinyin": "shū fu",
+      "translations": "(육체, 정신이) 편안하다"
+    },
+    {
+      "id": 503,
+      "hanzi": "树",
+      "pinyin": "shù",
+      "translations": "나무, 재배하다"
+    },
+    {
       "id": 504,
       "hanzi": "数学",
       "pinyin": "shù xué",
@@ -1151,6 +1235,18 @@
       "hanzi": "虽然",
       "pinyin": "suī rán",
       "translations": "비록 ~지만"
+    },
+    {
+      "id": 510,
+      "hanzi": "太阳",
+      "pinyin": "tài yáng",
+      "translations": "태양"
+    },
+    {
+      "id": 512,
+      "hanzi": "特别",
+      "pinyin": "tè bié",
+      "translations": "특히, 특별히"
     },
     {
       "id": 514,
@@ -1231,10 +1327,28 @@
       "translations": "왜"
     },
     {
+      "id": 530,
+      "hanzi": "位",
+      "pinyin": "wèi",
+      "translations": "(양사) 분, 위치, 지위"
+    },
+    {
+      "id": 533,
+      "hanzi": "习惯",
+      "pinyin": "xí guàn",
+      "translations": "익숙해지다, 습관"
+    },
+    {
       "id": 535,
       "hanzi": "洗澡",
       "pinyin": "xǐ zǎo",
       "translations": "목욕하다"
+    },
+    {
+      "id": 536,
+      "hanzi": "夏",
+      "pinyin": "xià",
+      "translations": "여름"
     },
     {
       "id": 537,
@@ -1253,6 +1367,12 @@
       "hanzi": "相信",
       "pinyin": "xiāng xìn",
       "translations": "믿다"
+    },
+    {
+      "id": 541,
+      "hanzi": "像",
+      "pinyin": "xiàng",
+      "translations": "~처럼, 닮다"
     },
     {
       "id": 543,
@@ -1309,10 +1429,28 @@
       "translations": "전부"
     },
     {
+      "id": 558,
+      "hanzi": "一会儿",
+      "pinyin": "yī huì r",
+      "translations": "잠시"
+    },
+    {
       "id": 559,
       "hanzi": "一样",
       "pinyin": "yī yàng",
       "translations": "같다"
+    },
+    {
+      "id": 560,
+      "hanzi": "以后",
+      "pinyin": "yǐ hòu",
+      "translations": "이후에"
+    },
+    {
+      "id": 561,
+      "hanzi": "以前",
+      "pinyin": "yǐ qián",
+      "translations": "이전에"
     },
     {
       "id": 563,
@@ -1363,10 +1501,34 @@
       "translations": "유명하다"
     },
     {
+      "id": 576,
+      "hanzi": "越",
+      "pinyin": "yuè",
+      "translations": "넘다, (越..越..) ~할수록 ~하다"
+    },
+    {
+      "id": 577,
+      "hanzi": "月亮",
+      "pinyin": "yuè liang",
+      "translations": "달"
+    },
+    {
+      "id": 578,
+      "hanzi": "云",
+      "pinyin": "yún",
+      "translations": "구름, 말하다"
+    },
+    {
       "id": 579,
       "hanzi": "站",
       "pinyin": "zhàn",
       "translations": "역, 서다"
+    },
+    {
+      "id": 580,
+      "hanzi": "着急",
+      "pinyin": "zháo jí",
+      "translations": "조급해하다"
     },
     {
       "id": 582,
@@ -1379,6 +1541,12 @@
       "hanzi": "终于",
       "pinyin": "zhōng yú",
       "translations": "마침내"
+    },
+    {
+      "id": 588,
+      "hanzi": "种",
+      "pinyin": "zhǒng",
+      "translations": "종(species)"
     },
     {
       "id": 589,
@@ -1403,6 +1571,18 @@
       "hanzi": "祝",
       "pinyin": "zhù",
       "translations": "바라다"
+    },
+    {
+      "id": 595,
+      "hanzi": "自己",
+      "pinyin": "zì jǐ",
+      "translations": "자기, 자신"
+    },
+    {
+      "id": 596,
+      "hanzi": "总是",
+      "pinyin": "zǒng shì",
+      "translations": "항상, 늘"
     },
     {
       "id": 597,

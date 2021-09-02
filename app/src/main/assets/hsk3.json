@@ -124,7 +124,7 @@
       "id": 321,
       "hanzi": "变化",
       "pinyin": "biàn huà",
-      "translations": "변화하다"
+      "translations": "변화(하다)"
     },
     {
       "id": 322,
@@ -274,7 +274,7 @@
       "id": 346,
       "hanzi": "带",
       "pinyin": "dài",
-      "translations": "띠, 밴드"
+      "translations": "챙기다, 띠, 밴드"
     },
     {
       "id": 347,
@@ -500,8 +500,8 @@
     },
     {
       "id": 385,
-      "hanzi": "刮",
-      "pinyin": "guā",
+      "hanzi": "刮风",
+      "pinyin": "guā fēng",
       "translations": "바람이 불다"
     },
     {
@@ -544,7 +544,7 @@
       "id": 392,
       "hanzi": "过去",
       "pinyin": "guò qu",
-      "translations": "지나가다"
+      "translations": "지나가다, 죽다"
     },
     {
       "id": 393,
@@ -1198,7 +1198,7 @@
       "id": 501,
       "hanzi": "舒服",
       "pinyin": "shū fu",
-      "translations": "편안하다"
+      "translations": "(육체, 정신이) 편안하다"
     },
     {
       "id": 502,
@@ -1210,7 +1210,7 @@
       "id": 503,
       "hanzi": "树",
       "pinyin": "shù",
-      "translations": "재배하다"
+      "translations": "나무, 재배하다"
     },
     {
       "id": 504,
@@ -1264,7 +1264,7 @@
       "id": 512,
       "hanzi": "特别",
       "pinyin": "tè bié",
-      "translations": "특별히"
+      "translations": "특히, 특별히"
     },
     {
       "id": 513,
@@ -1372,7 +1372,7 @@
       "id": 530,
       "hanzi": "位",
       "pinyin": "wèi",
-      "translations": "위치, 지위"
+      "translations": "(양사) 분, 위치, 지위"
     },
     {
       "id": 531,
@@ -1390,7 +1390,7 @@
       "id": 533,
       "hanzi": "习惯",
       "pinyin": "xí guàn",
-      "translations": "습관"
+      "translations": "익숙해지다, 습관"
     },
     {
       "id": 534,
@@ -1438,7 +1438,7 @@
       "id": 541,
       "hanzi": "像",
       "pinyin": "xiàng",
-      "translations": "닮다"
+      "translations": "~처럼, 닮다"
     },
     {
       "id": 542,
@@ -1558,7 +1558,7 @@
       "id": 561,
       "hanzi": "以前",
       "pinyin": "yǐ qián",
-      "translations": "이전"
+      "translations": "이전에"
     },
     {
       "id": 562,
@@ -1648,7 +1648,7 @@
       "id": 576,
       "hanzi": "越",
       "pinyin": "yuè",
-      "translations": "넘다, 건너다"
+      "translations": "넘다, (越..越..) ~할수록 ~하다"
     },
     {
       "id": 577,
@@ -1660,7 +1660,7 @@
       "id": 578,
       "hanzi": "云",
       "pinyin": "yún",
-      "translations": "구름"
+      "translations": "구름, 말하다"
     },
     {
       "id": 579,
@@ -1762,13 +1762,13 @@
       "id": 595,
       "hanzi": "自己",
       "pinyin": "zì jǐ",
-      "translations": "자신"
+      "translations": "자기, 자신"
     },
     {
       "id": 596,
       "hanzi": "总是",
       "pinyin": "zǒng shì",
-      "translations": "항상"
+      "translations": "항상, 늘"
     },
     {
       "id": 597,
