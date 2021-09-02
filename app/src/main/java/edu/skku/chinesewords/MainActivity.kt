@@ -593,33 +593,6 @@ class MainActivity : AppCompatActivity() {
         toggleAnswersClickable(false)
         setllQuestionOnClick {}
 
-        when (answerLocation) {
-            1 -> {
-                ivCorrect.visibility = View.VISIBLE
-                ivIncorrect.visibility = View.INVISIBLE
-                llAnswer1.setBackgroundResource(R.color.color_5ec8df)
-                markCorrect(currentWord)
-            }
-            2 -> {
-                ivCorrect.visibility = View.INVISIBLE
-                ivIncorrect.visibility = View.VISIBLE
-                llAnswer2.setBackgroundResource(R.color.color_5ec8df)
-                markWrong(currentWord)
-            }
-            3 -> {
-                ivCorrect.visibility = View.INVISIBLE
-                ivIncorrect.visibility = View.VISIBLE
-                llAnswer3.setBackgroundResource(R.color.color_5ec8df)
-                markWrong(currentWord)
-            }
-            4 -> {
-                ivCorrect.visibility = View.INVISIBLE
-                ivIncorrect.visibility = View.VISIBLE
-                llAnswer4.setBackgroundResource(R.color.color_5ec8df)
-                markWrong(currentWord)
-            }
-        }
-
         val clickedView: Int = when (it) {
             llAnswer1 -> 1
             llAnswer2 -> 2
@@ -632,7 +605,7 @@ class MainActivity : AppCompatActivity() {
             1 -> llAnswer1.setBackgroundResource(R.color.color_5ec8df)
             2 -> llAnswer2.setBackgroundResource(R.color.color_5ec8df)
             3 -> llAnswer3.setBackgroundResource(R.color.color_5ec8df)
-            else -> llAnswer4.setBackgroundResource(R.color.color_5ec8df)
+            4 -> llAnswer4.setBackgroundResource(R.color.color_5ec8df)
         }
 
         if (answerLocation == clickedView) {
