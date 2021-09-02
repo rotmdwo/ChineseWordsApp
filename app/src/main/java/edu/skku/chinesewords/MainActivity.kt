@@ -60,182 +60,8 @@ class MainActivity : AppCompatActivity() {
         // 랜덤 섞기
         wordTree.shuffle()
 
-        llAnswer1.setOnClickListener {
-            toggleAnswersClickable(false)
-            setllQuestionOnClick {}
-
-            when (answerLocation) {
-                1 -> {
-                    ivCorrect.visibility = View.VISIBLE
-                    ivIncorrect.visibility = View.INVISIBLE
-                    llAnswer1.setBackgroundResource(R.color.color_5ec8df)
-                    markCorrect(currentWord)
-                }
-                2 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer2.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-                3 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer3.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-                4 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer4.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-            }
-
-            val handler = Handler()
-            handler.postDelayed(Runnable {
-                ivCorrect.visibility = View.INVISIBLE
-                ivIncorrect.visibility = View.INVISIBLE
-                llAnswer1.setBackgroundResource(R.color.white)
-                llAnswer2.setBackgroundResource(R.color.white)
-                llAnswer3.setBackgroundResource(R.color.white)
-                llAnswer4.setBackgroundResource(R.color.white)
-
-                runGame(wordTree)
-                toggleAnswersClickable(true)
-            }, 1000)
-        }
-        llAnswer2.setOnClickListener {
-            toggleAnswersClickable(false)
-            setllQuestionOnClick {}
-
-            when (answerLocation) {
-                1 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer1.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-                2 -> {
-                    ivCorrect.visibility = View.VISIBLE
-                    ivIncorrect.visibility = View.INVISIBLE
-                    llAnswer2.setBackgroundResource(R.color.color_5ec8df)
-                    markCorrect(currentWord)
-                }
-                3 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer3.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-                4 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer4.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-            }
-
-            val handler = Handler()
-            handler.postDelayed(Runnable {
-                ivCorrect.visibility = View.INVISIBLE
-                ivIncorrect.visibility = View.INVISIBLE
-                llAnswer1.setBackgroundResource(R.color.white)
-                llAnswer2.setBackgroundResource(R.color.white)
-                llAnswer3.setBackgroundResource(R.color.white)
-                llAnswer4.setBackgroundResource(R.color.white)
-
-                runGame(wordTree)
-                toggleAnswersClickable(true)
-            }, 1000)
-        }
-        llAnswer3.setOnClickListener {
-            toggleAnswersClickable(false)
-            setllQuestionOnClick {}
-
-            when (answerLocation) {
-                1 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer1.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-                2 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer2.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-                3 -> {
-                    ivCorrect.visibility = View.VISIBLE
-                    ivIncorrect.visibility = View.INVISIBLE
-                    llAnswer3.setBackgroundResource(R.color.color_5ec8df)
-                    markCorrect(currentWord)
-                }
-                4 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer4.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-            }
-
-            val handler = Handler()
-            handler.postDelayed(Runnable {
-                ivCorrect.visibility = View.INVISIBLE
-                ivIncorrect.visibility = View.INVISIBLE
-                llAnswer1.setBackgroundResource(R.color.white)
-                llAnswer2.setBackgroundResource(R.color.white)
-                llAnswer3.setBackgroundResource(R.color.white)
-                llAnswer4.setBackgroundResource(R.color.white)
-
-                runGame(wordTree)
-                toggleAnswersClickable(true)
-            }, 1000)
-        }
-        llAnswer4.setOnClickListener {
-            toggleAnswersClickable(false)
-            setllQuestionOnClick {}
-
-            when (answerLocation) {
-                1 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer1.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-                2 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer2.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-                3 -> {
-                    ivCorrect.visibility = View.INVISIBLE
-                    ivIncorrect.visibility = View.VISIBLE
-                    llAnswer3.setBackgroundResource(R.color.color_5ec8df)
-                    markWrong(currentWord)
-                }
-                4 -> {
-                    ivCorrect.visibility = View.VISIBLE
-                    ivIncorrect.visibility = View.INVISIBLE
-                    llAnswer4.setBackgroundResource(R.color.color_5ec8df)
-                    markCorrect(currentWord)
-                }
-            }
-
-            val handler = Handler()
-            handler.postDelayed(Runnable {
-                ivCorrect.visibility = View.INVISIBLE
-                ivIncorrect.visibility = View.INVISIBLE
-                llAnswer1.setBackgroundResource(R.color.white)
-                llAnswer2.setBackgroundResource(R.color.white)
-                llAnswer3.setBackgroundResource(R.color.white)
-                llAnswer4.setBackgroundResource(R.color.white)
-
-                runGame(wordTree)
-                toggleAnswersClickable(true)
-            }, 1000)
-        }
+        // 리스너 등록
+        addOnClickListeners()
 
         // 게임 시작
         runGame(wordTree)
@@ -763,6 +589,84 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private val onClickListener = View.OnClickListener{
+        toggleAnswersClickable(false)
+        setllQuestionOnClick {}
+
+        when (answerLocation) {
+            1 -> {
+                ivCorrect.visibility = View.VISIBLE
+                ivIncorrect.visibility = View.INVISIBLE
+                llAnswer1.setBackgroundResource(R.color.color_5ec8df)
+                markCorrect(currentWord)
+            }
+            2 -> {
+                ivCorrect.visibility = View.INVISIBLE
+                ivIncorrect.visibility = View.VISIBLE
+                llAnswer2.setBackgroundResource(R.color.color_5ec8df)
+                markWrong(currentWord)
+            }
+            3 -> {
+                ivCorrect.visibility = View.INVISIBLE
+                ivIncorrect.visibility = View.VISIBLE
+                llAnswer3.setBackgroundResource(R.color.color_5ec8df)
+                markWrong(currentWord)
+            }
+            4 -> {
+                ivCorrect.visibility = View.INVISIBLE
+                ivIncorrect.visibility = View.VISIBLE
+                llAnswer4.setBackgroundResource(R.color.color_5ec8df)
+                markWrong(currentWord)
+            }
+        }
+
+        val clickedView: Int = when (it) {
+            llAnswer1 -> 1
+            llAnswer2 -> 2
+            llAnswer3 -> 3
+            llAnswer4 -> 4
+            else -> 5
+        }
+
+        when (answerLocation) {
+            1 -> llAnswer1.setBackgroundResource(R.color.color_5ec8df)
+            2 -> llAnswer2.setBackgroundResource(R.color.color_5ec8df)
+            3 -> llAnswer3.setBackgroundResource(R.color.color_5ec8df)
+            else -> llAnswer4.setBackgroundResource(R.color.color_5ec8df)
+        }
+
+        if (answerLocation == clickedView) {
+            ivCorrect.visibility = View.VISIBLE
+            ivIncorrect.visibility = View.INVISIBLE
+            markCorrect(currentWord)
+        } else {
+            ivCorrect.visibility = View.INVISIBLE
+            ivIncorrect.visibility = View.VISIBLE
+            markWrong(currentWord)
+        }
+
+        val handler = Handler()
+        handler.postDelayed(Runnable {
+            ivCorrect.visibility = View.INVISIBLE
+            ivIncorrect.visibility = View.INVISIBLE
+            llAnswer1.setBackgroundResource(R.color.white)
+            llAnswer2.setBackgroundResource(R.color.white)
+            llAnswer3.setBackgroundResource(R.color.white)
+            llAnswer4.setBackgroundResource(R.color.white)
+
+            runGame(wordTree)
+            toggleAnswersClickable(true)
+        }, 1000)
+    }
+
+    private fun addOnClickListeners() {
+        llAnswer1.setOnClickListener(onClickListener)
+        llAnswer2.setOnClickListener(onClickListener)
+        llAnswer3.setOnClickListener(onClickListener)
+        llAnswer4.setOnClickListener(onClickListener)
+        btnNotKnowing.setOnClickListener(onClickListener)
+    }
+
     private fun getRandomNumber1toN(N: Int): Int {
         return abs(Random().nextInt()) % N + 1
     }
@@ -773,11 +677,13 @@ class MainActivity : AppCompatActivity() {
             llAnswer2.isClickable = true
             llAnswer3.isClickable = true
             llAnswer4.isClickable = true
+            btnNotKnowing.isClickable = true
         } else {
             llAnswer1.isClickable = false
             llAnswer2.isClickable = false
             llAnswer3.isClickable = false
             llAnswer4.isClickable = false
+            btnNotKnowing.isClickable = false
         }
     }
 

@@ -299,6 +299,306 @@
       "hanzi": "介绍",
       "pinyin": "jiè shào",
       "translations": "소개하다"
+    },
+    {
+      "id": 201,
+      "hanzi": "进",
+      "pinyin": "jìn",
+      "translations": "나아가다, (안에) 들다"
+    },
+    {
+      "id": 202,
+      "hanzi": "近",
+      "pinyin": "jìn",
+      "translations": "가깝다"
+    },
+    {
+      "id": 203,
+      "hanzi": "就",
+      "pinyin": "jiù",
+      "translations": "바로"
+    },
+    {
+      "id": 204,
+      "hanzi": "觉得",
+      "pinyin": "jué de",
+      "translations": "~라고 느끼"
+    },
+    {
+      "id": 205,
+      "hanzi": "咖啡",
+      "pinyin": "kā fēi",
+      "translations": "커피"
+    },
+    {
+      "id": 206,
+      "hanzi": "开始",
+      "pinyin": "kāi shǐ",
+      "translations": "개시하다"
+    },
+    {
+      "id": 207,
+      "hanzi": "考试",
+      "pinyin": "kǎo shì",
+      "translations": "시험"
+    },
+    {
+      "id": 208,
+      "hanzi": "可能",
+      "pinyin": "kě néng",
+      "translations": "가능하다"
+    },
+    {
+      "id": 209,
+      "hanzi": "可以",
+      "pinyin": "kě yǐ",
+      "translations": "할 수 있다"
+    },
+    {
+      "id": 210,
+      "hanzi": "课",
+      "pinyin": "kè",
+      "translations": "수업"
+    },
+    {
+      "id": 211,
+      "hanzi": "快",
+      "pinyin": "kuài",
+      "translations": "빠르다"
+    },
+    {
+      "id": 212,
+      "hanzi": "快乐",
+      "pinyin": "kuài lè",
+      "translations": "기쁘다"
+    },
+    {
+      "id": 213,
+      "hanzi": "累",
+      "pinyin": "lèi",
+      "translations": "피곤하다"
+    },
+    {
+      "id": 214,
+      "hanzi": "离",
+      "pinyin": "lí",
+      "translations": "떠나다, 분리하다"
+    },
+    {
+      "id": 215,
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "translations": "둘, 2"
+    },
+    {
+      "id": 216,
+      "hanzi": "路",
+      "pinyin": "lù",
+      "translations": "도로, 방법"
+    },
+    {
+      "id": 217,
+      "hanzi": "旅游",
+      "pinyin": "lǚ yóu",
+      "translations": "여행(하다)"
+    },
+    {
+      "id": 218,
+      "hanzi": "卖",
+      "pinyin": "mài",
+      "translations": "팔다"
+    },
+    {
+      "id": 219,
+      "hanzi": "慢",
+      "pinyin": "màn",
+      "translations": "느리다"
+    },
+    {
+      "id": 220,
+      "hanzi": "忙",
+      "pinyin": "máng",
+      "translations": "바쁘다"
+    },
+    {
+      "id": 221,
+      "hanzi": "每",
+      "pinyin": "měi",
+      "translations": "매번, 늘"
+    },
+    {
+      "id": 222,
+      "hanzi": "妹妹",
+      "pinyin": "mèi mei",
+      "translations": "여동생"
+    },
+    {
+      "id": 223,
+      "hanzi": "门",
+      "pinyin": "mén",
+      "translations": "문"
+    },
+    {
+      "id": 224,
+      "hanzi": "男人",
+      "pinyin": "nán rén",
+      "translations": "남자"
+    },
+    {
+      "id": 225,
+      "hanzi": "您",
+      "pinyin": "nín",
+      "translations": "당신"
+    },
+    {
+      "id": 226,
+      "hanzi": "牛奶",
+      "pinyin": "niú nǎi",
+      "translations": "우유"
+    },
+    {
+      "id": 227,
+      "hanzi": "女人",
+      "pinyin": "nǚ rén",
+      "translations": "여자"
+    },
+    {
+      "id": 228,
+      "hanzi": "旁边",
+      "pinyin": "páng biān",
+      "translations": "옆, 측면"
+    },
+    {
+      "id": 229,
+      "hanzi": "跑步",
+      "pinyin": "pǎo bù",
+      "translations": "달리다, 구보하다"
+    },
+    {
+      "id": 230,
+      "hanzi": "便宜",
+      "pinyin": "pián yi",
+      "translations": "(가격이) 싸다"
+    },
+    {
+      "id": 231,
+      "hanzi": "票",
+      "pinyin": "piào",
+      "translations": "표, 티켓"
+    },
+    {
+      "id": 232,
+      "hanzi": "妻子",
+      "pinyin": "qī zi",
+      "translations": "아내"
+    },
+    {
+      "id": 233,
+      "hanzi": "起床",
+      "pinyin": "qǐ chuáng",
+      "translations": "(잠에서) 깨어나다, 일어나다"
+    },
+    {
+      "id": 234,
+      "hanzi": "千",
+      "pinyin": "qiān",
+      "translations": "천(1000), 그네"
+    },
+    {
+      "id": 235,
+      "hanzi": "晴",
+      "pinyin": "qíng",
+      "translations": "(날씨가) 개다, 맑다"
+    },
+    {
+      "id": 236,
+      "hanzi": "去年",
+      "pinyin": "qù nián",
+      "translations": "작년"
+    },
+    {
+      "id": 237,
+      "hanzi": "让",
+      "pinyin": "ràng",
+      "translations": "시키다, 양보하다"
+    },
+    {
+      "id": 238,
+      "hanzi": "上班",
+      "pinyin": "shàng bān",
+      "translations": "출근하다"
+    },
+    {
+      "id": 239,
+      "hanzi": "身体",
+      "pinyin": "shēn tǐ",
+      "translations": "신체, 건강"
+    },
+    {
+      "id": 240,
+      "hanzi": "生病",
+      "pinyin": "shēng bìng",
+      "translations": "병이 나다"
+    },
+    {
+      "id": 241,
+      "hanzi": "生日",
+      "pinyin": "shēng rì",
+      "translations": "생일"
+    },
+    {
+      "id": 242,
+      "hanzi": "时间",
+      "pinyin": "shí jiān",
+      "translations": "시간"
+    },
+    {
+      "id": 243,
+      "hanzi": "事情",
+      "pinyin": "shì qing",
+      "translations": "일, 사건, 업무"
+    },
+    {
+      "id": 244,
+      "hanzi": "手表",
+      "pinyin": "shǒu biǎo",
+      "translations": "손목시계"
+    },
+    {
+      "id": 245,
+      "hanzi": "手机",
+      "pinyin": "shǒu jī",
+      "translations": "휴대폰"
+    },
+    {
+      "id": 246,
+      "hanzi": "送",
+      "pinyin": "sòng",
+      "translations": "보내다, 선물하다"
+    },
+    {
+      "id": 247,
+      "hanzi": "所以",
+      "pinyin": "suǒ yǐ",
+      "translations": "그래서, 그러므로"
+    },
+    {
+      "id": 248,
+      "hanzi": "它",
+      "pinyin": "tā",
+      "translations": "그것"
+    },
+    {
+      "id": 249,
+      "hanzi": "踢",
+      "pinyin": "tī",
+      "translations": "차다, 축구하다"
+    },
+    {
+      "id": 250,
+      "hanzi": "题",
+      "pinyin": "tí",
+      "translations": "제목, 문제"
     }
   ]
 }
