@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.speech.tts.TextToSpeech
 import android.util.Log
+import android.view.Gravity
 import android.view.View
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
@@ -62,6 +63,15 @@ class MainActivity : AppCompatActivity() {
 
         // 리스너 등록
         addOnClickListeners()
+
+        // Side Drawer 등록
+        btnDrawer.setOnClickListener {
+            if (!drawer.isDrawerOpen(Gravity.START)) {
+                drawer.openDrawer(Gravity.START)
+            } else {
+                drawer.closeDrawer(Gravity.START)
+            }
+        }
 
         // 게임 시작
         runGame(wordTree)

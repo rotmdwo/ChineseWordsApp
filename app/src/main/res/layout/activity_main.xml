@@ -15,218 +15,245 @@
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="55dp" />
+            android:layout_height="55dp" >
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btnDrawer"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="fitCenter"
+                android:background="@color/color_5ec8df"
+                android:src="@drawable/hamburger" />
+        </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="55dp">
-
-        <LinearLayout
-            android:id="@+id/llEmptyWarning"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:visibility="visible">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_warning" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
-                android:includeFontPadding="false"
-                android:lineSpacingExtra="5dp"
-                android:text="@string/main_empty_word_book"
-                android:textColor="#555555"
-                android:textSize="15sp" />
-        </LinearLayout>
+        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/clQuestion"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp" >
 
             <LinearLayout
-                android:id="@+id/llQuestion"
+                android:id="@+id/llEmptyWarning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:padding="10dp"
-                android:elevation="5dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_warning" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="5dp"
+                    android:text="@string/main_empty_word_book"
+                    android:textColor="#555555"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent">
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tvQuestion"
+
+                <LinearLayout
+                    android:id="@+id/llQuestion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="北京"
-                    android:textSize="40sp"
-                    android:textColor="#FF0000"
-                    android:fontFamily="sans-serif-black" />
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/ivSpeaker"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:src="@drawable/speaker"
-                    android:visibility="gone" />
-            </LinearLayout>
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvQuestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="北京"
+                        android:textSize="40sp"
+                        android:textColor="#FF0000"
+                        android:fontFamily="sans-serif-black" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivSpeaker"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/speaker"
+                        android:visibility="gone" />
+                </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/llAnswer1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:background="@color/white"
-                android:padding="10dp"
-                android:elevation="5dp"
-                app:layout_constraintTop_toBottomOf="@+id/llQuestion"
+                <LinearLayout
+                    android:id="@+id/llAnswer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/llQuestion"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAnswer1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="베이징"
+                        android:textSize="35sp"
+                        android:textColor="#222222"
+                        android:fontFamily="sans-serif-black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAnswer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/llAnswer1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAnswer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="베이징"
+                        android:textSize="35sp"
+                        android:textColor="#222222"
+                        android:fontFamily="sans-serif-black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAnswer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/llAnswer2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAnswer3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="베이징"
+                        android:textSize="35sp"
+                        android:textColor="#222222"
+                        android:fontFamily="sans-serif-black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAnswer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/llAnswer3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvAnswer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="베이징"
+                        android:textSize="35sp"
+                        android:textColor="#222222"
+                        android:fontFamily="sans-serif-black"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCorrect"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_complete_s"
+                android:visibility="invisible"
+                tools:visibility="visible"
+                android:elevation="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/clQuestion"
+                app:layout_constraintBottom_toTopOf="@+id/adBottom"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tvAnswer1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="베이징"
-                    android:textSize="35sp"
-                    android:textColor="#222222"
-                    android:fontFamily="sans-serif-black"/>
-            </LinearLayout>
+                app:layout_constraintEnd_toEndOf="parent"/>
 
-            <LinearLayout
-                android:id="@+id/llAnswer2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:padding="10dp"
-                android:elevation="5dp"
-                android:layout_marginTop="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/llAnswer1"
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivIncorrect"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/return_ban"
+                android:visibility="invisible"
+                tools:visibility="visible"
+                android:elevation="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/clQuestion"
+                app:layout_constraintBottom_toTopOf="@+id/adBottom"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tvAnswer2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="베이징"
-                    android:textSize="35sp"
-                    android:textColor="#222222"
-                    android:fontFamily="sans-serif-black"/>
-            </LinearLayout>
+                app:layout_constraintEnd_toEndOf="parent"/>
 
-            <LinearLayout
-                android:id="@+id/llAnswer3"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNotKnowing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:padding="10dp"
+                android:text="모름"
+                android:background="#CfffE5"
+                android:textColor="#3EB489"
                 android:elevation="5dp"
-                android:layout_marginTop="20dp"
-                app:layout_constraintTop_toBottomOf="@+id/llAnswer2"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@+id/clQuestion"
+                app:layout_constraintBottom_toTopOf="@+id/adBottom"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tvAnswer3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="베이징"
-                    android:textSize="35sp"
-                    android:textColor="#222222"
-                    android:fontFamily="sans-serif-black"/>
-            </LinearLayout>
+                app:layout_constraintEnd_toEndOf="parent"/>
 
-            <LinearLayout
-                android:id="@+id/llAnswer4"
-                android:layout_width="wrap_content"
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adBottom"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:padding="10dp"
-                android:elevation="5dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                app:layout_constraintTop_toBottomOf="@+id/llAnswer3"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/AD_BOTTOM_BANNER_ID"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tvAnswer4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="베이징"
-                    android:textSize="35sp"
-                    android:textColor="#222222"
-                    android:fontFamily="sans-serif-black"/>
-            </LinearLayout>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/ivCorrect"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/img_complete_s"
-            android:visibility="invisible"
-            tools:visibility="visible"
-            android:elevation="6dp"
-            app:layout_constraintTop_toBottomOf="@+id/clQuestion"
-            app:layout_constraintBottom_toTopOf="@+id/adBottom"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/ivIncorrect"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/return_ban"
-            android:visibility="invisible"
-            tools:visibility="visible"
-            android:elevation="6dp"
-            app:layout_constraintTop_toBottomOf="@+id/clQuestion"
-            app:layout_constraintBottom_toTopOf="@+id/adBottom"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnNotKnowing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="모름"
-            android:background="#CfffE5"
-            android:textColor="#3EB489"
-            android:elevation="5dp"
-            android:textSize="25sp"
-            app:layout_constraintTop_toBottomOf="@+id/clQuestion"
-            app:layout_constraintBottom_toTopOf="@+id/adBottom"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
-
-        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adBottom"
+        <!-- DrawerLayout 안의 View는 layout_gravity를 left(start)와 right(end)만 가질 수 있음 -->
+        <!-- Left Drawer가 가운데 있는 메인 요소보다 뒤에 정의 되어야 메인 요소를 덮을 수 있음 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="@string/AD_BOTTOM_BANNER_ID"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_gravity="start">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
