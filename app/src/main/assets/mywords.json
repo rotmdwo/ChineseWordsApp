@@ -67,6 +67,12 @@
       "translations": "나쁘다, 틀리다"
     },
     {
+      "id": 166,
+      "hanzi": "打篮球",
+      "pinyin": "dá lán qiú",
+      "translations": "농구하다"
+    },
+    {
       "id": 167,
       "hanzi": "大家",
       "pinyin": "dà jiā",
@@ -517,10 +523,28 @@
       "translations": "배부르다, 충분히"
     },
     {
+      "id": 316,
+      "hanzi": "被",
+      "pinyin": "bèi",
+      "translations": "(피동) ~에 의해 당하다, 이불"
+    },
+    {
+      "id": 317,
+      "hanzi": "鼻子",
+      "pinyin": "bí zi",
+      "translations": "코"
+    },
+    {
       "id": 318,
       "hanzi": "比较",
       "pinyin": "bǐ jiào",
       "translations": "비교하다, 비교적"
+    },
+    {
+      "id": 319,
+      "hanzi": "比赛",
+      "pinyin": "bǐ sài",
+      "translations": "시합하다"
     },
     {
       "id": 321,
@@ -545,6 +569,12 @@
       "hanzi": "菜单",
       "pinyin": "cài dān",
       "translations": "메뉴판"
+    },
+    {
+      "id": 329,
+      "hanzi": "参加",
+      "pinyin": "cān jiā",
+      "translations": "참가하다"
     },
     {
       "id": 331,
@@ -610,7 +640,7 @@
       "id": 346,
       "hanzi": "带",
       "pinyin": "dài",
-      "translations": "챙기다, 띠, 밴드"
+      "translations": "챙기다, 지니다, 띠"
     },
     {
       "id": 347,
@@ -667,6 +697,18 @@
       "translations": "동물"
     },
     {
+      "id": 361,
+      "hanzi": "短",
+      "pinyin": "duǎn",
+      "translations": "짧다, 부족하다"
+    },
+    {
+      "id": 363,
+      "hanzi": "锻炼",
+      "pinyin": "duàn liàn",
+      "translations": "단련하다"
+    },
+    {
       "id": 364,
       "hanzi": "多么",
       "pinyin": "duō me",
@@ -683,6 +725,18 @@
       "hanzi": "而且",
       "pinyin": "ér qiě",
       "translations": "게다가"
+    },
+    {
+      "id": 367,
+      "hanzi": "耳朵",
+      "pinyin": "ěr duo",
+      "translations": "귀"
+    },
+    {
+      "id": 368,
+      "hanzi": "发烧",
+      "pinyin": "fā shāo",
+      "translations": "열이 나다"
     },
     {
       "id": 369,
@@ -799,6 +853,12 @@
       "translations": "칠판"
     },
     {
+      "id": 397,
+      "hanzi": "护照",
+      "pinyin": "hù zhào",
+      "translations": "여권"
+    },
+    {
       "id": 398,
       "hanzi": "花",
       "pinyin": "huā",
@@ -875,6 +935,12 @@
       "hanzi": "见面",
       "pinyin": "jiàn miàn",
       "translations": "만나다"
+    },
+    {
+      "id": 415,
+      "hanzi": "健康",
+      "pinyin": "jiàn kāng",
+      "translations": "건강(하다)"
     },
     {
       "id": 417,
@@ -1099,10 +1165,22 @@
       "translations": "노력하다"
     },
     {
+      "id": 474,
+      "hanzi": "爬山",
+      "pinyin": "pá shān",
+      "translations": "등산하다"
+    },
+    {
       "id": 475,
       "hanzi": "盘子",
       "pinyin": "pán zi",
       "translations": "쟁반"
+    },
+    {
+      "id": 476,
+      "hanzi": "胖",
+      "pinyin": "pàng",
+      "translations": "뚱뚱하다"
     },
     {
       "id": 477,
@@ -1187,6 +1265,12 @@
       "hanzi": "上网",
       "pinyin": "shàng wǎng",
       "translations": "인터넷을 하다"
+    },
+    {
+      "id": 500,
+      "hanzi": "瘦",
+      "pinyin": "shòu",
+      "translations": "마르다"
     },
     {
       "id": 501,
@@ -1283,6 +1367,12 @@
       "hanzi": "同意",
       "pinyin": "tóng yì",
       "translations": "동의하다"
+    },
+    {
+      "id": 520,
+      "hanzi": "头发",
+      "pinyin": "tóu fa",
+      "translations": "머리카락"
     },
     {
       "id": 521,
@@ -1393,6 +1483,18 @@
       "translations": "뉴스"
     },
     {
+      "id": 548,
+      "hanzi": "行李箱",
+      "pinyin": "xíng li xiāng",
+      "translations": "트렁크"
+    },
+    {
+      "id": 549,
+      "hanzi": "兴趣",
+      "pinyin": "xìng qù",
+      "translations": "흥미, 재미"
+    },
+    {
       "id": 550,
       "hanzi": "熊猫",
       "pinyin": "xióng māo",
@@ -1495,6 +1597,12 @@
       "translations": "사용하다"
     },
     {
+      "id": 571,
+      "hanzi": "游戏",
+      "pinyin": "yóu xì",
+      "translations": "유희, 게임"
+    },
+    {
       "id": 572,
       "hanzi": "有名",
       "pinyin": "yǒu míng",
@@ -1571,6 +1679,12 @@
       "hanzi": "祝",
       "pinyin": "zhù",
       "translations": "바라다"
+    },
+    {
+      "id": 593,
+      "hanzi": "注意",
+      "pinyin": "zhù yì",
+      "translations": "주의하다"
     },
     {
       "id": 595,
