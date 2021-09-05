@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PracticeActivity">
+
+    <data>
+        <variable
+            name="word"
+            type="edu.skku.chinesewords.WordTree.Word" />
+
+        <variable
+            name="view"
+            type="edu.skku.chinesewords.PracticeActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHanzi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{word.hanzi}"
+            tools:text="北京"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvPinyin"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPinyin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{word.pinyin}"
+            tools:text="bei jing"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toEndOf="@+id/tvHanzi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTranslations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{word.translations}"
+            tools:text="북경"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHanzi"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{word.hanzi}"
+            tools:text="北京"
+            android:textSize="100sp"
+            android:textColor="#E0E0E0"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닫기"
+            android:textColor="@color/white"
+            android:background="@color/color_5ec8df"
+            android:onClick="@{()->view.closeButtonClicked()}"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

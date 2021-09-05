@@ -1,5 +1,7 @@
 package edu.skku.chinesewords
 
+import android.os.Parcel
+import android.os.Parcelable
 import java.util.*
 
 class WordTree {
@@ -50,5 +52,39 @@ class WordTree {
         return questionList[currentIndex++]
     }
 
-    class Word(val hanzi: String, val pinyin: String, val translations: String, var correct: Int, var wrong: Int, var accurateRatio: Double)
+    class Word(val hanzi: String, val pinyin: String, val translations: String, var correct: Int, var wrong: Int, var accurateRatio: Double) : Parcelable {
+        constructor(parcel: Parcel) : this(
+            parcel.readString()!!,
+            parcel.readString()!!,
+            parcel.readString()!!,
+            parcel.readInt(),
+            parcel.readInt(),
+            parcel.readDouble()
+        ) {
+        }
+
+        override fun writeToParcel(parcel: Parcel, flags: Int) {
+            parcel.writeString(hanzi)
+            parcel.writeString(pinyin)
+            parcel.writeString(translations)
+            parcel.writeInt(correct)
+            parcel.writeInt(wrong)
+            parcel.writeDouble(accurateRatio)
+        }
+
+        override fun describeContents(): Int {
+            return 0
+        }
+
+        companion object CREATOR : Parcelable.Creator<Word> {
+            override fun createFromParcel(parcel: Parcel): Word {
+                return Word(parcel)
+            }
+
+            override fun newArray(size: Int): Array<Word?> {
+                return arrayOfNulls(size)
+            }
+        }
+
+    }
 }

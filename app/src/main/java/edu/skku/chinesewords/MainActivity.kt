@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.speech.tts.TextToSpeech
-import android.util.Log
 import android.view.Gravity
 import android.view.View
 import com.google.android.gms.ads.AdRequest
@@ -626,6 +625,10 @@ class MainActivity : AppCompatActivity() {
             ivCorrect.visibility = View.INVISIBLE
             ivIncorrect.visibility = View.VISIBLE
             markWrong(currentWord)
+
+            val intent = Intent(this, PracticeActivity::class.java)
+            intent.putExtra("word", currentWord)
+            startActivity(intent)
         }
 
         val handler = Handler()
