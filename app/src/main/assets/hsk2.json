@@ -292,7 +292,7 @@
       "id": 199,
       "hanzi": "姐姐",
       "pinyin": "jiě jie",
-      "translations": "여동생"
+      "translations": "누나, 언니"
     },
     {
       "id": 200,
@@ -599,6 +599,126 @@
       "hanzi": "题",
       "pinyin": "tí",
       "translations": "제목, 문제"
+    },
+    {
+      "id": 251,
+      "hanzi": "跳舞",
+      "pinyin": "tiào wǔ",
+      "translations": "춤추다"
+    },
+    {
+      "id": 252,
+      "hanzi": "外",
+      "pinyin": "wài",
+      "translations": "밖, 외부"
+    },
+    {
+      "id": 253,
+      "hanzi": "完",
+      "pinyin": "wán",
+      "translations": "완전하다, 끝나다"
+    },
+    {
+      "id": 254,
+      "hanzi": "玩",
+      "pinyin": "wán",
+      "translations": "놀다"
+    },
+    {
+      "id": 255,
+      "hanzi": "晚上",
+      "pinyin": "wǎn shang",
+      "translations": "저녁"
+    },
+    {
+      "id": 256,
+      "hanzi": "为",
+      "pinyin": "wèi",
+      "translations": "~을 위해"
+    },
+    {
+      "id": 257,
+      "hanzi": "问",
+      "pinyin": "wèn",
+      "translations": "묻다"
+    },
+    {
+      "id": 258,
+      "hanzi": "问题",
+      "pinyin": "wèn tí",
+      "translations": "문제, 질문"
+    },
+    {
+      "id": 259,
+      "hanzi": "西瓜",
+      "pinyin": "xī guā",
+      "translations": "수박"
+    },
+    {
+      "id": 260,
+      "hanzi": "希望",
+      "pinyin": "xī wàng",
+      "translations": "바라다"
+    },
+    {
+      "id": 261,
+      "hanzi": "洗",
+      "pinyin": "xǐ",
+      "translations": "닦다"
+    },
+    {
+      "id": 262,
+      "hanzi": "向",
+      "pinyin": "xiàng",
+      "translations": "~을 향하여"
+    },
+    {
+      "id": 263,
+      "hanzi": "小时",
+      "pinyin": "xiǎo shí",
+      "translations": "~시간"
+    },
+    {
+      "id": 264,
+      "hanzi": "笑",
+      "pinyin": "xiào",
+      "translations": "웃다"
+    },
+    {
+      "id": 265,
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "translations": "새롭다"
+    },
+    {
+      "id": 266,
+      "hanzi": "姓",
+      "pinyin": "xìng",
+      "translations": "성"
+    },
+    {
+      "id": 267,
+      "hanzi": "休息",
+      "pinyin": "xiū xi",
+      "translations": "휴식하다"
+    },
+    {
+      "id": 268,
+      "hanzi": "雪",
+      "pinyin": "xuě",
+      "translations": "눈"
+    },
+    {
+      "id": 269,
+      "hanzi": "颜色",
+      "pinyin": "yán sè",
+      "translations": "색깔"
+    },
+    {
+      "id": 270,
+      "hanzi": "眼睛",
+      "pinyin": "yǎn jing",
+      "translations": "눈"
     }
   ]
 }

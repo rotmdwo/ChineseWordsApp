@@ -22,7 +22,7 @@
       "id": 304,
       "hanzi": "爱好",
       "pinyin": "ài hào",
-      "translations": "애호하다, 취미"
+      "translations": "취미, 애호하다"
     },
     {
       "id": 305,
@@ -34,7 +34,7 @@
       "id": 306,
       "hanzi": "把",
       "pinyin": "bǎ",
-      "translations": "잡다"
+      "translations": "~을, 잡다"
     },
     {
       "id": 307,
@@ -496,7 +496,7 @@
       "id": 384,
       "hanzi": "故事",
       "pinyin": "gù shi",
-      "translations": "고사, 이야기"
+      "translations": "이야기, 고사"
     },
     {
       "id": 385,
@@ -1438,7 +1438,7 @@
       "id": 541,
       "hanzi": "像",
       "pinyin": "xiàng",
-      "translations": "~처럼, 닮다"
+      "translations": "~처럼, ~와 같이, 닮다"
     },
     {
       "id": 542,
@@ -1702,7 +1702,7 @@
       "id": 585,
       "hanzi": "只",
       "pinyin": "zhǐ",
-      "translations": "그러나, 오직"
+      "translations": "단지, 오직, 그러나"
     },
     {
       "id": 586,
