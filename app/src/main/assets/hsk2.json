@@ -82,7 +82,7 @@
       "id": 164,
       "hanzi": "从",
       "pinyin": "cóng",
-      "translations": "좇다, 따르다"
+      "translations": "~로부터(장소/시간), 좇다, 따르다"
     },
     {
       "id": 165,
@@ -112,7 +112,7 @@
       "id": 169,
       "hanzi": "到",
       "pinyin": "dào",
-      "translations": "도착하다"
+      "translations": "도착하다, ~까지(장소/시간)"
     },
     {
       "id": 170,
@@ -382,7 +382,7 @@
       "id": 214,
       "hanzi": "离",
       "pinyin": "lí",
-      "translations": "떠나다, 분리하다"
+      "translations": "떠나다, 분리하다, ~로부터(장소/시간)"
     },
     {
       "id": 215,
@@ -719,6 +719,186 @@
       "hanzi": "眼睛",
       "pinyin": "yǎn jing",
       "translations": "눈"
+    },
+    {
+      "id": 271,
+      "hanzi": "羊肉",
+      "pinyin": "yáng ròu",
+      "translations": "양고기"
+    },
+    {
+      "id": 272,
+      "hanzi": "药",
+      "pinyin": "yào",
+      "translations": "약"
+    },
+    {
+      "id": 273,
+      "hanzi": "要",
+      "pinyin": "yào",
+      "translations": "~하기를 원하다, ~할 것이다"
+    },
+    {
+      "id": 274,
+      "hanzi": "也",
+      "pinyin": "yě",
+      "translations": "~도 또한"
+    },
+    {
+      "id": 275,
+      "hanzi": "已经",
+      "pinyin": "yǐ jīng",
+      "translations": "이미"
+    },
+    {
+      "id": 276,
+      "hanzi": "一起",
+      "pinyin": "yī qǐ",
+      "translations": "함께"
+    },
+    {
+      "id": 277,
+      "hanzi": "意思",
+      "pinyin": "yì si",
+      "translations": "생각, 의견, 뜻"
+    },
+    {
+      "id": 278,
+      "hanzi": "阴",
+      "pinyin": "yīn",
+      "translations": "흐리다"
+    },
+    {
+      "id": 279,
+      "hanzi": "因为",
+      "pinyin": "yīn wèi",
+      "translations": "왜냐하면"
+    },
+    {
+      "id": 280,
+      "hanzi": "游泳",
+      "pinyin": "yóu yǒng",
+      "translations": "수영(하다)"
+    },
+    {
+      "id": 281,
+      "hanzi": "右边",
+      "pinyin": "yòu bian",
+      "translations": "오른쪽"
+    },
+    {
+      "id": 282,
+      "hanzi": "鱼",
+      "pinyin": "yú",
+      "translations": "물고기"
+    },
+    {
+      "id": 283,
+      "hanzi": "元",
+      "pinyin": "yuán",
+      "translations": "위안"
+    },
+    {
+      "id": 284,
+      "hanzi": "远",
+      "pinyin": "yuǎn",
+      "translations": "멀다"
+    },
+    {
+      "id": 285,
+      "hanzi": "运动",
+      "pinyin": "yùn dòng",
+      "translations": "운동하다"
+    },
+    {
+      "id": 286,
+      "hanzi": "再",
+      "pinyin": "zài",
+      "translations": "다시"
+    },
+    {
+      "id": 287,
+      "hanzi": "早上",
+      "pinyin": "zǎo shang",
+      "translations": "아침"
+    },
+    {
+      "id": 288,
+      "hanzi": "张",
+      "pinyin": "zhāng",
+      "translations": "열다, 늘어놓다"
+    },
+    {
+      "id": 289,
+      "hanzi": "长",
+      "pinyin": "zhǎng",
+      "translations": "생기다(외모), 자라다"
+    },
+    {
+      "id": 290,
+      "hanzi": "丈夫",
+      "pinyin": "zhàng fu",
+      "translations": "남편"
+    },
+    {
+      "id": 291,
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "translations": "찾다"
+    },
+    {
+      "id": 292,
+      "hanzi": "着",
+      "pinyin": "zhe",
+      "translations": "~한 채로 있다"
+    },
+    {
+      "id": 293,
+      "hanzi": "真",
+      "pinyin": "zhēn",
+      "translations": "정말"
+    },
+    {
+      "id": 294,
+      "hanzi": "正在",
+      "pinyin": "zhèng zài",
+      "translations": "마침"
+    },
+    {
+      "id": 295,
+      "hanzi": "知道",
+      "pinyin": "zhī dào",
+      "translations": "알다"
+    },
+    {
+      "id": 296,
+      "hanzi": "准备",
+      "pinyin": "zhǔn bèi",
+      "translations": "준비하다"
+    },
+    {
+      "id": 297,
+      "hanzi": "自行车",
+      "pinyin": "zì xíng chē",
+      "translations": "자전거"
+    },
+    {
+      "id": 298,
+      "hanzi": "走",
+      "pinyin": "zǒu",
+      "translations": "가다, 나가다"
+    },
+    {
+      "id": 299,
+      "hanzi": "最",
+      "pinyin": "zuì",
+      "translations": "가장"
+    },
+    {
+      "id": 300,
+      "hanzi": "左边",
+      "pinyin": "zuǒ bian",
+      "translations": "왼쪽"
     }
   ]
 }
