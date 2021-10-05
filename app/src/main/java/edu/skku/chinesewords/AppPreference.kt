@@ -2,6 +2,7 @@ package edu.skku.chinesewords
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.util.Log
 
 class AppPreference {
     companion object {
@@ -86,16 +87,38 @@ class AppPreference {
         return mSharedPreferencsHSK1.all as Map<String, String>
     }
 
-    fun setWordAtHSK3(character: String, meaning: String) {
-        mSharedPreferencsHSK3.edit().putString(character, meaning).apply()
+    fun getAllFromHSK2(): Map<String, String> {
+        return mSharedPreferencsHSK2.all as Map<String, String>
+    }
+
+    fun setWordAtHSK2(character: String, meaning: String) {
+        mSharedPreferencsHSK2.edit().putString(character, meaning).apply()
     }
 
     fun getAllFromHSK3(): Map<String, String> {
         return mSharedPreferencsHSK3.all as Map<String, String>
     }
 
+    fun setWordAtHSK3(character: String, meaning: String) {
+        mSharedPreferencsHSK3.edit().putString(character, meaning).apply()
+    }
+
+    fun getAllFromHSK4(): Map<String, String> {
+        return mSharedPreferencsHSK4.all as Map<String, String>
+    }
+
+    fun setWordAtHSK4(character: String, meaning: String) {
+        mSharedPreferencsHSK4.edit().putString(character, meaning).apply()
+    }
+
     fun setWordAtMyWords(character: String, meaning: String) {
         mSharedPreferencsMyWords.edit().putString(character, meaning).apply()
+        Log.d("asdf", "setWordAtMyWords: ${character}")
+    }
+
+    fun deleteWordFromMyWords(character: String) {
+        mSharedPreferencsMyWords.edit().remove(character).apply()
+        Log.d("asdf", "deleteWordFromMyWords: ${character}")
     }
 
     fun getAllFromMyWords(): Map<String, String> {

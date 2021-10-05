@@ -46,6 +46,64 @@ class WordTree {
         }
     }
 
+    fun deleteItem(hanzi: String) {
+        for (i in 0 until allList.size) {
+            if (allList[i].hanzi == hanzi) {
+                allList.removeAt(i)
+                break
+            }
+        }
+
+        when (hanzi.length) {
+            1 -> {
+                for (i in 0 until length1List.size) {
+                    if (length1List[i].hanzi == hanzi) {
+                        length1List.removeAt(i)
+                        break
+                    }
+                }
+            }
+            2 -> {
+                for (i in 0 until length2List.size) {
+                    if (length2List[i].hanzi == hanzi) {
+                        length2List.removeAt(i)
+                        break
+                    }
+                }
+            }
+            3 -> {
+                for (i in 0 until length3List.size) {
+                    if (length3List[i].hanzi == hanzi) {
+                        length3List.removeAt(i)
+                        break
+                    }
+                }
+            }
+            4 -> {
+                for (i in 0 until length4List.size) {
+                    if (length4List[i].hanzi == hanzi) {
+                        length4List.removeAt(i)
+                        break
+                    }
+                }
+            }
+            else -> {
+                for (i in 0 until length4List.size) {
+                    if (length4List[i].hanzi == hanzi) {
+                        length4List.removeAt(i)
+                        break
+                    }
+                }
+            }
+        }
+
+        var i = 0
+        while (i < questionList.size) {
+            if (questionList[i].hanzi == hanzi) questionList.removeAt(i)
+            else i++
+        }
+    }
+
     fun next(): Word {
         if (currentIndex >= questionList.size) currentIndex = 0
 
@@ -53,6 +111,8 @@ class WordTree {
     }
 
     class Word(val hanzi: String, val pinyin: String, val translations: String, var correct: Int, var wrong: Int, var accurateRatio: Double) : Parcelable {
+        var selected = false
+
         constructor(parcel: Parcel) : this(
             parcel.readString()!!,
             parcel.readString()!!,

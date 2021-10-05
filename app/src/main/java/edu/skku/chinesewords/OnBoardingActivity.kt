@@ -62,17 +62,60 @@ class OnBoardingActivity : AppCompatActivity() {
         val pref = AppPreference.get()
 
         if (!pref.getExist(AppPreference.EXIST_HSK_1)) {
-            pref.setWordAtHSK1("爱", "ài\n사랑하다")
-            pref.setWordAtHSK1("八", "bā\n8")
-            pref.setWordAtHSK1("爸爸", "bà‧ba\n아빠")
-            pref.setWordAtHSK1("杯子", "bēi‧zi\n잔")
-            pref.setWordAtHSK1("北京", "Běijīng\n베이징")
-
-            pref.setExist(AppPreference.EXIST_HSK_1)
+//            var json = ""
+//
+//            try {
+//                val inputStream = assets.open("hsk1.json")
+//                val fileSize = inputStream.available()
+//                val buffer = ByteArray(fileSize)
+//                inputStream.read(buffer)
+//                inputStream.close()
+//
+//                json = String(buffer, Charsets.UTF_8)
+//                val jsonObject = JSONObject(json)
+//                val jsonArray = jsonObject.getJSONArray("hsk1")
+//
+//                for (i in 0 until jsonArray.length()) {
+//                    val wordObject = jsonArray.getJSONObject(i)
+//                    val hanzi = wordObject.getString("hanzi")
+//                    val pinyin = wordObject.getString("pinyin")
+//                    val translations = wordObject.getString("translations")
+//
+//                    pref.setWordAtHSK1(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
+//                }
+//            } catch (e: IOException) {
+//                e.printStackTrace()
+//            }
+//
+//            pref.setExist(AppPreference.EXIST_HSK_1)
         }
 
         if (!pref.getExist(AppPreference.EXIST_HSK_2)) {
 
+            var json = ""
+
+            try {
+                val inputStream = assets.open("hsk2.json")
+                val fileSize = inputStream.available()
+                val buffer = ByteArray(fileSize)
+                inputStream.read(buffer)
+                inputStream.close()
+
+                json = String(buffer, Charsets.UTF_8)
+                val jsonObject = JSONObject(json)
+                val jsonArray = jsonObject.getJSONArray("hsk2")
+
+                for (i in 0 until jsonArray.length()) {
+                    val wordObject = jsonArray.getJSONObject(i)
+                    val hanzi = wordObject.getString("hanzi")
+                    val pinyin = wordObject.getString("pinyin")
+                    val translations = wordObject.getString("translations")
+
+                    pref.setWordAtHSK2(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
+                }
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
 
             pref.setExist(AppPreference.EXIST_HSK_2)
         }
@@ -109,6 +152,30 @@ class OnBoardingActivity : AppCompatActivity() {
 
         if (!pref.getExist(AppPreference.EXIST_HSK_4)) {
 
+            var json = ""
+
+            try {
+                val inputStream = assets.open("hsk4.json")
+                val fileSize = inputStream.available()
+                val buffer = ByteArray(fileSize)
+                inputStream.read(buffer)
+                inputStream.close()
+
+                json = String(buffer, Charsets.UTF_8)
+                val jsonObject = JSONObject(json)
+                val jsonArray = jsonObject.getJSONArray("hsk4")
+
+                for (i in 0 until jsonArray.length()) {
+                    val wordObject = jsonArray.getJSONObject(i)
+                    val hanzi = wordObject.getString("hanzi")
+                    val pinyin = wordObject.getString("pinyin")
+                    val translations = wordObject.getString("translations")
+
+                    pref.setWordAtHSK4(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
+                }
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
 
             pref.setExist(AppPreference.EXIST_HSK_4)
         }
@@ -125,34 +192,34 @@ class OnBoardingActivity : AppCompatActivity() {
             pref.setExist(AppPreference.EXIST_HSK_6)
         }
 
-        if (!pref.getExist(AppPreference.EXIST_MY_WORDS)) {
-
-            var json = ""
-
-            try {
-                val inputStream = assets.open("mywords.json")
-                val fileSize = inputStream.available()
-                val buffer = ByteArray(fileSize)
-                inputStream.read(buffer)
-                inputStream.close()
-
-                json = String(buffer, Charsets.UTF_8)
-                val jsonObject = JSONObject(json)
-                val jsonArray = jsonObject.getJSONArray("mywords")
-
-                for (i in 0 until jsonArray.length()) {
-                    val wordObject = jsonArray.getJSONObject(i)
-                    val hanzi = wordObject.getString("hanzi")
-                    val pinyin = wordObject.getString("pinyin")
-                    val translations = wordObject.getString("translations")
-
-                    pref.setWordAtMyWords(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
-                }
-            } catch (e: IOException) {
-                e.printStackTrace()
-            }
-
-            pref.setExist(AppPreference.EXIST_MY_WORDS)
-        }
+//        if (!pref.getExist(AppPreference.EXIST_MY_WORDS)) {
+//
+//            var json = ""
+//
+//            try {
+//                val inputStream = assets.open("mywords.json")
+//                val fileSize = inputStream.available()
+//                val buffer = ByteArray(fileSize)
+//                inputStream.read(buffer)
+//                inputStream.close()
+//
+//                json = String(buffer, Charsets.UTF_8)
+//                val jsonObject = JSONObject(json)
+//                val jsonArray = jsonObject.getJSONArray("mywords")
+//
+//                for (i in 0 until jsonArray.length()) {
+//                    val wordObject = jsonArray.getJSONObject(i)
+//                    val hanzi = wordObject.getString("hanzi")
+//                    val pinyin = wordObject.getString("pinyin")
+//                    val translations = wordObject.getString("translations")
+//
+//                    pref.setWordAtMyWords(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
+//                }
+//            } catch (e: IOException) {
+//                e.printStackTrace()
+//            }
+//
+//            pref.setExist(AppPreference.EXIST_MY_WORDS)
+//        }
     }
 }

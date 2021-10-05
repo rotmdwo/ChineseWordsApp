@@ -1,0 +1,65 @@
+{
+  "hsk4": [
+    {
+      "id": 642,
+      "hanzi": "吵",
+      "pinyin": "chǎo",
+      "translations": "시끄럽다"
+    },
+    {
+      "id": 655,
+      "hanzi": "窗户",
+      "pinyin": "chuāng hu",
+      "translations": "창문"
+    },
+    {
+      "id": 691,
+      "hanzi": "肚子",
+      "pinyin": "dù zi",
+      "translations": "배(복부)"
+    },
+    {
+      "id": 850,
+      "hanzi": "可是",
+      "pinyin": "kě shì",
+      "translations": "그러나"
+    },
+    {
+      "id": 851,
+      "hanzi": "可惜",
+      "pinyin": "kě xī",
+      "translations": "아쉽다"
+    },
+    {
+      "id": 885,
+      "hanzi": "留学",
+      "pinyin": "liú xué",
+      "translations": "유학(하다)"
+    },
+    {
+      "id": 888,
+      "hanzi": "流行",
+      "pinyin": "liú xíng",
+      "translations": "유행"
+    },
+    {
+      "id": 911,
+      "hanzi": "暖和",
+      "pinyin": "nuǎn huo",
+      "translations": "따뜻하다"
+    },
+    {
+      "id": 972,
+      "hanzi": "生活",
+      "pinyin": "shēng huó",
+      "translations": "생활"
+    },
+
+    {
+      "id": 1033,
+      "hanzi": "条件",
+      "pinyin": "tiáo jiàn",
+      "translations": "조건"
+    }
+  ]
+}

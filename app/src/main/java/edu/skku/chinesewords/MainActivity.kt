@@ -6,14 +6,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.view.Gravity
 import android.view.View
+import androidx.core.view.isVisible
+import androidx.databinding.DataBindingUtil
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import kotlinx.android.synthetic.main.activity_main.*
 import java.lang.Math.abs
 import java.util.*
 import edu.skku.chinesewords.WordTree.Word
+import edu.skku.chinesewords.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,39 +30,74 @@ class MainActivity : AppCompatActivity() {
         }
 
         lateinit var currentWord: Word
-        val wordTree = WordTree()
+        val allWordsTree = WordTree()
+        val myWordsTree = WordTree()
         var answerLocation = 0
         lateinit var tts: TextToSpeech
 
         val pref = AppPreference.get()
     }
 
+    lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         // load AD
         loadAd(adBottom)
 
         // TODO: 설정된 단어장 불러오기, 설정된 단어장 없으면 llEmptyWarning 띄우기
         val pref = AppPreference.get()
-        val words = pref.getAllFromMyWords()
-        val iterator = words.keys.iterator()
+        val hsk2Words = pref.getAllFromHSK2()
+        val hsk3Words = pref.getAllFromHSK3()
+        val hsk4Words = pref.getAllFromHSK4()
+        val allWords = hsk2Words.plus(hsk3Words).plus(hsk4Words)
+        val allWordsIterator = allWords.keys.iterator()
+        val myWords = pref.getAllFromMyWords()
+        val myWordsIterator = myWords.keys.iterator()
+//        val iterator = words.keys.iterator()
 
-        while (iterator.hasNext()) {
-            val key = iterator.next()
-            val value = words.getOrDefault(key, "")
+        // 모든 단어 리스트
+        while (allWordsIterator.hasNext()) {
+            val key = allWordsIterator.next()
+//            val value = words.getOrDefault(key, "")
+            val value = allWords.getOrDefault(key, "")
             if ("" != value) {
                 val pinyin: String = value.substring(0, value.indexOf("\n"))
                 val translations: String = value.substring(value.indexOf("\n") + 1, value.indexOf("\r"))
                 val correct = value.substring(value.indexOf("\r") + 1, value.indexOf("\t")).toInt()
                 val wrong = value.substring(value.indexOf("\t") + 1).toInt()
-                wordTree.addItem(Word(key, pinyin, translations, correct, wrong, if (correct == 0 && wrong == 0) 0.0 else if (wrong == 0) 1.0 else correct / (correct + wrong).toDouble()))
+                val word = Word(key, pinyin, translations, correct, wrong, if (correct == 0 && wrong == 0) 0.0 else if (wrong == 0) 1.0 else correct / (correct + wrong).toDouble())
+                word.selected = myWords.containsKey(key)
+                allWordsTree.addItem(word)
+            }
+        }
+
+        // 나의 단어 리스트
+        while (myWordsIterator.hasNext()) {
+            val key = myWordsIterator.next()
+//            val value = words.getOrDefault(key, "")
+            val value = myWords.getOrDefault(key, "")
+            if ("" != value) {
+                val pinyin: String = value.substring(0, value.indexOf("\n"))
+                val translations: String = value.substring(value.indexOf("\n") + 1, value.indexOf("\r"))
+                val correct = value.substring(value.indexOf("\r") + 1, value.indexOf("\t")).toInt()
+                val wrong = value.substring(value.indexOf("\t") + 1).toInt()
+                val word = Word(key, pinyin, translations, correct, wrong, if (correct == 0 && wrong == 0) 0.0 else if (wrong == 0) 1.0 else correct / (correct + wrong).toDouble())
+                word.selected = true
+                myWordsTree.addItem(word)
             }
         }
 
         // 랜덤 섞기
-        wordTree.shuffle()
+        myWordsTree.shuffle()
+
+        val adapter = WordAdapter(this)
+        binding.adapter = adapter
+        adapter.allWordsTree = allWordsTree
+        adapter.myWordsTree = myWordsTree
+        adapter.notifyDataSetChanged()
 
         // 리스너 등록
         addOnClickListeners()
@@ -73,7 +112,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         // 게임 시작
-        runGame(wordTree)
+        if (myWordsTree.allList.size >= 4) runGame(myWordsTree)
+        else {
+            llEmptyWarning.isVisible = true
+            clQuestion.isVisible = false
+            btnNotKnowing.isVisible = false
+        }
     }
 
     private fun loadAd(adView: AdView) {
@@ -81,7 +125,22 @@ class MainActivity : AppCompatActivity() {
         adView.loadAd(adRequest)
     }
 
-    private fun runGame(wordTree: WordTree) {
+    fun runGame(wordTree: WordTree) {
+        if (wordTree.allList.size >= 4) {
+            llEmptyWarning.isVisible = false
+            clQuestion.isVisible = true
+            btnNotKnowing.isVisible = true
+
+            processGame(myWordsTree)
+        }
+        else {
+            llEmptyWarning.isVisible = true
+            clQuestion.isVisible = false
+            btnNotKnowing.isVisible = false
+        }
+    }
+
+    fun processGame(wordTree: WordTree) {
         when (getRandomNumber1toN(8)) {
             1 -> {
                 // 문제: 한자, 답: 발음
@@ -640,7 +699,7 @@ class MainActivity : AppCompatActivity() {
             llAnswer3.setBackgroundResource(R.color.white)
             llAnswer4.setBackgroundResource(R.color.white)
 
-            runGame(wordTree)
+            runGame(myWordsTree)
             toggleAnswersClickable(true)
         }, 1000)
     }
@@ -692,30 +751,30 @@ class MainActivity : AppCompatActivity() {
     private fun getRandomWord(word: Word): Word {
         return when (word.hanzi.length) {
             1 -> {
-                if (wordTree.length1List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
-                else wordTree.length1List[getRandomNumber1toN(wordTree.length1List.size) - 1]
+                if (myWordsTree.length1List.size < 4) myWordsTree.allList[getRandomNumber1toN(myWordsTree.allList.size) - 1]
+                else myWordsTree.length1List[getRandomNumber1toN(myWordsTree.length1List.size) - 1]
             }
             2 -> {
-                if (wordTree.length2List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
-                else wordTree.length2List[getRandomNumber1toN(wordTree.length2List.size) - 1]
+                if (myWordsTree.length2List.size < 4) myWordsTree.allList[getRandomNumber1toN(myWordsTree.allList.size) - 1]
+                else myWordsTree.length2List[getRandomNumber1toN(myWordsTree.length2List.size) - 1]
             }
             3 -> {
-                if (wordTree.length3List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
-                else wordTree.length3List[getRandomNumber1toN(wordTree.length3List.size) - 1]
+                if (myWordsTree.length3List.size < 4) myWordsTree.allList[getRandomNumber1toN(myWordsTree.allList.size) - 1]
+                else myWordsTree.length3List[getRandomNumber1toN(myWordsTree.length3List.size) - 1]
             }
             4 -> {
-                if (wordTree.length4List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
-                else wordTree.length4List[getRandomNumber1toN(wordTree.length4List.size) - 1]
+                if (myWordsTree.length4List.size < 4) myWordsTree.allList[getRandomNumber1toN(myWordsTree.allList.size) - 1]
+                else myWordsTree.length4List[getRandomNumber1toN(myWordsTree.length4List.size) - 1]
             }
             else -> {
-                if (wordTree.length4List.size < 4) wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
-                else wordTree.length4List[getRandomNumber1toN(wordTree.length4List.size) - 1]
+                if (myWordsTree.length4List.size < 4) myWordsTree.allList[getRandomNumber1toN(myWordsTree.allList.size) - 1]
+                else myWordsTree.length4List[getRandomNumber1toN(myWordsTree.length4List.size) - 1]
             }
         }
     }
 
     private fun getRandomWord(): Word {
-        return wordTree.allList[getRandomNumber1toN(wordTree.allList.size) - 1]
+        return myWordsTree.allList[getRandomNumber1toN(myWordsTree.allList.size) - 1]
     }
 
     private fun markCorrect(word: Word) {
