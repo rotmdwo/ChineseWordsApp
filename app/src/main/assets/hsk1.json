@@ -1,0 +1,904 @@
+{
+  "hsk1": [
+    {
+      "id": 1,
+      "hanzi": "爱",
+      "pinyin": "ài",
+      "translations": "사랑하다"
+    },
+    {
+      "id": 2,
+      "hanzi": "八",
+      "pinyin": "bā",
+      "translations": "8"
+    },
+    {
+      "id": 3,
+      "hanzi": "爸爸",
+      "pinyin": "bà ba",
+      "translations": "아빠"
+    },
+    {
+      "id": 4,
+      "hanzi": "杯子",
+      "pinyin": "bēi zi",
+      "translations": "컵"
+    },
+    {
+      "id": 5,
+      "hanzi": "北京",
+      "pinyin": "Běi jīng",
+      "translations": "북경"
+    },
+    {
+      "id": 6,
+      "hanzi": "本",
+      "pinyin": "běn",
+      "translations": "뿌리"
+    },
+    {
+      "id": 7,
+      "hanzi": "不客气",
+      "pinyin": "bù kè qi",
+      "translations": "천만에요"
+    },
+    {
+      "id": 8,
+      "hanzi": "不",
+      "pinyin": "bù",
+      "translations": "아니다"
+    },
+    {
+      "id": 9,
+      "hanzi": "菜",
+      "pinyin": "cài",
+      "translations": "음식, 채소"
+    },
+    {
+      "id": 10,
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "translations": "차"
+    },
+    {
+      "id": 11,
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "translations": "먹다"
+    },
+    {
+      "id": 12,
+      "hanzi": "出租车",
+      "pinyin": "chū zū chē",
+      "translations": "택시"
+    },
+    {
+      "id": 13,
+      "hanzi": "打电话",
+      "pinyin": "dǎ diàn huà",
+      "translations": "전화하다"
+    },
+    {
+      "id": 14,
+      "hanzi": "大",
+      "pinyin": "dà",
+      "translations": "크다"
+    },
+    {
+      "id": 15,
+      "hanzi": "的",
+      "pinyin": "de",
+      "translations": "~의"
+    },
+    {
+      "id": 16,
+      "hanzi": "点",
+      "pinyin": "diǎn",
+      "translations": "점, 시간"
+    },
+    {
+      "id": 17,
+      "hanzi": "电脑",
+      "pinyin": "diàn nǎo",
+      "translations": "컴퓨터"
+    },
+    {
+      "id": 18,
+      "hanzi": "电视",
+      "pinyin": "diàn shì",
+      "translations": "텔레비전"
+    },
+    {
+      "id": 19,
+      "hanzi": "电影",
+      "pinyin": "diàn yǐng",
+      "translations": "영화"
+    },
+    {
+      "id": 20,
+      "hanzi": "东西",
+      "pinyin": "dōng xi",
+      "translations": "물건"
+    },
+    {
+      "id": 21,
+      "hanzi": "都",
+      "pinyin": "dōu",
+      "translations": "모두"
+    },
+    {
+      "id": 22,
+      "hanzi": "读",
+      "pinyin": "dú",
+      "translations": "읽다"
+    },
+    {
+      "id": 23,
+      "hanzi": "对不起",
+      "pinyin": "duì bu qǐ",
+      "translations": "미안합니다"
+    },
+    {
+      "id": 24,
+      "hanzi": "多",
+      "pinyin": "duō",
+      "translations": "많다"
+    },
+    {
+      "id": 25,
+      "hanzi": "多少",
+      "pinyin": "duō shao",
+      "translations": "얼마"
+    },
+    {
+      "id": 26,
+      "hanzi": "儿子",
+      "pinyin": "ér zi",
+      "translations": "아들"
+    },
+    {
+      "id": 27,
+      "hanzi": "二",
+      "pinyin": "èr",
+      "translations": "둘(2)"
+    },
+    {
+      "id": 28,
+      "hanzi": "饭馆",
+      "pinyin": "fàn guǎn",
+      "translations": "식당, 호텔"
+    },
+    {
+      "id": 29,
+      "hanzi": "飞机",
+      "pinyin": "fēi jī",
+      "translations": "비행기"
+    },
+    {
+      "id": 30,
+      "hanzi": "分钟",
+      "pinyin": "fēn zhōng",
+      "translations": "분"
+    },
+    {
+      "id": 31,
+      "hanzi": "高兴",
+      "pinyin": "gāo xìng",
+      "translations": "기쁘다"
+    },
+    {
+      "id": 32,
+      "hanzi": "个",
+      "pinyin": "gè",
+      "translations": "개(사람, 물건 양사)"
+    },
+    {
+      "id": 33,
+      "hanzi": "工作",
+      "pinyin": "gōng zuò",
+      "translations": "일하다"
+    },
+    {
+      "id": 34,
+      "hanzi": "狗",
+      "pinyin": "gǒu",
+      "translations": "강아지"
+    },
+    {
+      "id": 35,
+      "hanzi": "汉语",
+      "pinyin": "Hàn yǔ",
+      "translations": "중국어"
+    },
+    {
+      "id": 36,
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "translations": "좋다"
+    },
+    {
+      "id": 37,
+      "hanzi": "喝",
+      "pinyin": "hē",
+      "translations": "마시다"
+    },
+    {
+      "id": 38,
+      "hanzi": "和",
+      "pinyin": "hé",
+      "translations": "~와"
+    },
+    {
+      "id": 39,
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "translations": "매우"
+    },
+    {
+      "id": 40,
+      "hanzi": "后面",
+      "pinyin": "hòu mian",
+      "translations": "뒷쪽"
+    },
+    {
+      "id": 41,
+      "hanzi": "回",
+      "pinyin": "huí",
+      "translations": "되돌아가다"
+    },
+    {
+      "id": 42,
+      "hanzi": "会",
+      "pinyin": "huì",
+      "translations": "~할 수 있다"
+    },
+    {
+      "id": 43,
+      "hanzi": "火车站",
+      "pinyin": "huǒ chē zhàn",
+      "translations": "기차역"
+    },
+    {
+      "id": 44,
+      "hanzi": "几",
+      "pinyin": "jǐ",
+      "translations": "몇"
+    },
+    {
+      "id": 45,
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "translations": "집"
+    },
+    {
+      "id": 46,
+      "hanzi": "叫",
+      "pinyin": "jiào",
+      "translations": "부르다"
+    },
+    {
+      "id": 47,
+      "hanzi": "今天",
+      "pinyin": "jīn tiān",
+      "translations": "오늘"
+    },
+    {
+      "id": 48,
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "translations": "아홉(9)"
+    },
+    {
+      "id": 49,
+      "hanzi": "开",
+      "pinyin": "kāi",
+      "translations": "열다, 키다"
+    },
+    {
+      "id": 50,
+      "hanzi": "看",
+      "pinyin": "kàn",
+      "translations": "보다"
+    },
+    {
+      "id": 51,
+      "hanzi": "看见",
+      "pinyin": "kàn jiàn",
+      "translations": "보다"
+    },
+    {
+      "id": 52,
+      "hanzi": "块",
+      "pinyin": "kuài",
+      "translations": "조각, 원"
+    },
+    {
+      "id": 53,
+      "hanzi": "来",
+      "pinyin": "lái",
+      "translations": "돌아오다"
+    },
+    {
+      "id": 54,
+      "hanzi": "老师",
+      "pinyin": "lǎo shī",
+      "translations": "선생님"
+    },
+    {
+      "id": 55,
+      "hanzi": "了",
+      "pinyin": "le",
+      "translations": "~했다"
+    },
+    {
+      "id": 56,
+      "hanzi": "冷",
+      "pinyin": "lěng",
+      "translations": "춥다"
+    },
+    {
+      "id": 57,
+      "hanzi": "里",
+      "pinyin": "lǐ",
+      "translations": "안, 고향, 500m"
+    },
+    {
+      "id": 58,
+      "hanzi": "零",
+      "pinyin": "líng",
+      "translations": "영(0)"
+    },
+    {
+      "id": 59,
+      "hanzi": "六",
+      "pinyin": "liù",
+      "translations": "여섯(6)"
+    },
+    {
+      "id": 60,
+      "hanzi": "妈妈",
+      "pinyin": "mā ma",
+      "translations": "엄마"
+    },
+    {
+      "id": 61,
+      "hanzi": "吗",
+      "pinyin": "ma",
+      "translations": "의문사"
+    },
+    {
+      "id": 62,
+      "hanzi": "买",
+      "pinyin": "mǎi",
+      "translations": "사다"
+    },
+    {
+      "id": 63,
+      "hanzi": "猫",
+      "pinyin": "māo",
+      "translations": "고양이"
+    },
+    {
+      "id": 64,
+      "hanzi": "没",
+      "pinyin": "méi",
+      "translations": "아니다"
+    },
+    {
+      "id": 65,
+      "hanzi": "没关系",
+      "pinyin": "méi guān xi",
+      "translations": "상관없다"
+    },
+    {
+      "id": 66,
+      "hanzi": "米饭",
+      "pinyin": "mǐ fàn",
+      "translations": "쌀밥"
+    },
+    {
+      "id": 67,
+      "hanzi": "明天",
+      "pinyin": "míng tiān",
+      "translations": "내일"
+    },
+    {
+      "id": 68,
+      "hanzi": "名字",
+      "pinyin": "míng zi",
+      "translations": "이름"
+    },
+    {
+      "id": 69,
+      "hanzi": "哪",
+      "pinyin": "nǎ",
+      "translations": "어느"
+    },
+    {
+      "id": 70,
+      "hanzi": "那",
+      "pinyin": "nà",
+      "translations": "저것"
+    },
+    {
+      "id": 71,
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "translations": "~는?, ~하는 중이다"
+    },
+    {
+      "id": 72,
+      "hanzi": "能",
+      "pinyin": "néng",
+      "translations": "~할 수 있다"
+    },
+    {
+      "id": 73,
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "translations": "너"
+    },
+    {
+      "id": 74,
+      "hanzi": "年",
+      "pinyin": "nián",
+      "translations": "년"
+    },
+    {
+      "id": 75,
+      "hanzi": "女儿",
+      "pinyin": "nǚ ér",
+      "translations": "딸"
+    },
+    {
+      "id": 76,
+      "hanzi": "朋友",
+      "pinyin": "péng you",
+      "translations": "친구"
+    },
+    {
+      "id": 77,
+      "hanzi": "漂亮",
+      "pinyin": "piào liang",
+      "translations": "예쁘다"
+    },
+    {
+      "id": 78,
+      "hanzi": "苹果",
+      "pinyin": "píng guǒ",
+      "translations": "사과"
+    },
+    {
+      "id": 79,
+      "hanzi": "七",
+      "pinyin": "qī",
+      "translations": "칠(7)"
+    },
+    {
+      "id": 80,
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "translations": "돈"
+    },
+    {
+      "id": 81,
+      "hanzi": "前面",
+      "pinyin": "qián miàn",
+      "translations": "앞면"
+    },
+    {
+      "id": 82,
+      "hanzi": "请",
+      "pinyin": "qǐng",
+      "translations": "요구하다"
+    },
+    {
+      "id": 83,
+      "hanzi": "去",
+      "pinyin": "qù",
+      "translations": "가다"
+    },
+    {
+      "id": 84,
+      "hanzi": "热",
+      "pinyin": "rè",
+      "translations": "덥다"
+    },
+    {
+      "id": 85,
+      "hanzi": "人",
+      "pinyin": "rén",
+      "translations": "사람"
+    },
+    {
+      "id": 86,
+      "hanzi": "认识",
+      "pinyin": "rèn shi",
+      "translations": "알다"
+    },
+    {
+      "id": 87,
+      "hanzi": "日",
+      "pinyin": "rì",
+      "translations": "태양, 일"
+    },
+    {
+      "id": 88,
+      "hanzi": "三",
+      "pinyin": "sān",
+      "translations": "셋(3)"
+    },
+    {
+      "id": 89,
+      "hanzi": "商店",
+      "pinyin": "shāng diàn",
+      "translations": "상점"
+    },
+    {
+      "id": 90,
+      "hanzi": "上",
+      "pinyin": "shàng",
+      "translations": "위"
+    },
+    {
+      "id": 91,
+      "hanzi": "上午",
+      "pinyin": "shàng wǔ",
+      "translations": "오전"
+    },
+    {
+      "id": 92,
+      "hanzi": "少",
+      "pinyin": "shǎo",
+      "translations": "적다"
+    },
+    {
+      "id": 93,
+      "hanzi": "谁",
+      "pinyin": "shéi",
+      "translations": "누구"
+    },
+    {
+      "id": 94,
+      "hanzi": "什么",
+      "pinyin": "shén me",
+      "translations": "무엇"
+    },
+    {
+      "id": 95,
+      "hanzi": "十",
+      "pinyin": "shí",
+      "translations": "십(10)"
+    },
+    {
+      "id": 96,
+      "hanzi": "时候",
+      "pinyin": "shí hou",
+      "translations": "시간"
+    },
+    {
+      "id": 97,
+      "hanzi": "是",
+      "pinyin": "shì",
+      "translations": "~이다"
+    },
+    {
+      "id": 98,
+      "hanzi": "书",
+      "pinyin": "shū",
+      "translations": "책"
+    },
+    {
+      "id": 99,
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "translations": "물"
+    },
+    {
+      "id": 100,
+      "hanzi": "水果",
+      "pinyin": "shuǐ guǒ",
+      "translations": "과일"
+    },
+    {
+      "id": 101,
+      "hanzi": "睡觉",
+      "pinyin": "shuì jiào",
+      "translations": "자다"
+    },
+    {
+      "id": 102,
+      "hanzi": "说话",
+      "pinyin": "shuō huà",
+      "translations": "말하다"
+    },
+    {
+      "id": 103,
+      "hanzi": "四",
+      "pinyin": "sì",
+      "translations": "넷(4)"
+    },
+    {
+      "id": 104,
+      "hanzi": "岁",
+      "pinyin": "suì",
+      "translations": "살(나이)"
+    },
+    {
+      "id": 105,
+      "hanzi": "他",
+      "pinyin": "tā",
+      "translations": "그(he)"
+    },
+    {
+      "id": 106,
+      "hanzi": "她",
+      "pinyin": "tā",
+      "translations": "그녀"
+    },
+    {
+      "id": 107,
+      "hanzi": "太",
+      "pinyin": "tài",
+      "translations": "매우"
+    },
+    {
+      "id": 108,
+      "hanzi": "天气",
+      "pinyin": "tiān qì",
+      "translations": "날씨"
+    },
+    {
+      "id": 109,
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "translations": "듣다"
+    },
+    {
+      "id": 110,
+      "hanzi": "同学",
+      "pinyin": "tóng xué",
+      "translations": "학우"
+    },
+    {
+      "id": 111,
+      "hanzi": "喂",
+      "pinyin": "wèi",
+      "translations": "이봐"
+    },
+    {
+      "id": 112,
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "translations": "나"
+    },
+    {
+      "id": 113,
+      "hanzi": "我们",
+      "pinyin": "wǒ men",
+      "translations": "우리"
+    },
+    {
+      "id": 114,
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "translations": "다섯(5)"
+    },
+    {
+      "id": 115,
+      "hanzi": "喜欢",
+      "pinyin": "xǐ huan",
+      "translations": "좋아하다"
+    },
+    {
+      "id": 116,
+      "hanzi": "下",
+      "pinyin": "xià",
+      "translations": "아래"
+    },
+    {
+      "id": 117,
+      "hanzi": "下午",
+      "pinyin": "xià wǔ",
+      "translations": "오후"
+    },
+    {
+      "id": 118,
+      "hanzi": "下雨",
+      "pinyin": "xià yǔ",
+      "translations": "비오다"
+    },
+    {
+      "id": 119,
+      "hanzi": "先生",
+      "pinyin": "xiān sheng",
+      "translations": "선생"
+    },
+    {
+      "id": 120,
+      "hanzi": "现在",
+      "pinyin": "xiàn zài",
+      "translations": "지금"
+    },
+    {
+      "id": 121,
+      "hanzi": "想",
+      "pinyin": "xiǎng",
+      "translations": "생각하다, ~하고 싶다"
+    },
+    {
+      "id": 122,
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "translations": "작다"
+    },
+    {
+      "id": 123,
+      "hanzi": "小姐",
+      "pinyin": "xiǎo jie",
+      "translations": "아가씨"
+    },
+    {
+      "id": 124,
+      "hanzi": "些",
+      "pinyin": "xiē",
+      "translations": "조금"
+    },
+    {
+      "id": 125,
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "translations": "쓰다"
+    },
+    {
+      "id": 126,
+      "hanzi": "谢谢",
+      "pinyin": "xiè xie",
+      "translations": "고맙습니다"
+    },
+    {
+      "id": 127,
+      "hanzi": "星期",
+      "pinyin": "xīng qī",
+      "translations": "주, 요일"
+    },
+    {
+      "id": 128,
+      "hanzi": "学生",
+      "pinyin": "xué sheng",
+      "translations": "학생"
+    },
+    {
+      "id": 129,
+      "hanzi": "学习",
+      "pinyin": "xué xí",
+      "translations": "학습하다"
+    },
+    {
+      "id": 130,
+      "hanzi": "学校",
+      "pinyin": "xué xiào",
+      "translations": "학교"
+    },
+    {
+      "id": 131,
+      "hanzi": "一",
+      "pinyin": "yī",
+      "translations": "하나(1)"
+    },
+    {
+      "id": 132,
+      "hanzi": "衣服",
+      "pinyin": "yī fu",
+      "translations": "옷"
+    },
+    {
+      "id": 133,
+      "hanzi": "医生",
+      "pinyin": "yī shēng",
+      "translations": "의사"
+    },
+    {
+      "id": 134,
+      "hanzi": "医院",
+      "pinyin": "yī yuàn",
+      "translations": "병원"
+    },
+    {
+      "id": 135,
+      "hanzi": "椅子",
+      "pinyin": "yǐ zi",
+      "translations": "의자"
+    },
+    {
+      "id": 136,
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "translations": "있다"
+    },
+    {
+      "id": 137,
+      "hanzi": "月",
+      "pinyin": "yuè",
+      "translations": "달"
+    },
+    {
+      "id": 138,
+      "hanzi": "在",
+      "pinyin": "zài",
+      "translations": "~에 있다, ~하는 중이다"
+    },
+    {
+      "id": 139,
+      "hanzi": "再见",
+      "pinyin": "zài jiàn",
+      "translations": "또 봐"
+    },
+    {
+      "id": 140,
+      "hanzi": "怎么",
+      "pinyin": "zěn me",
+      "translations": "어떻게, 왜"
+    },
+    {
+      "id": 141,
+      "hanzi": "怎么样",
+      "pinyin": "zěn me yàng",
+      "translations": "어때?"
+    },
+    {
+      "id": 142,
+      "hanzi": "这",
+      "pinyin": "zhè",
+      "translations": "이것"
+    },
+    {
+      "id": 143,
+      "hanzi": "中国",
+      "pinyin": "Zhōng guó",
+      "translations": "중국"
+    },
+    {
+      "id": 144,
+      "hanzi": "中午",
+      "pinyin": "zhōng wǔ",
+      "translations": "점심"
+    },
+    {
+      "id": 145,
+      "hanzi": "住",
+      "pinyin": "zhù",
+      "translations": "거주하다"
+    },
+    {
+      "id": 146,
+      "hanzi": "桌子",
+      "pinyin": "zhuō zi",
+      "translations": "탁자"
+    },
+    {
+      "id": 147,
+      "hanzi": "字",
+      "pinyin": "zì",
+      "translations": "글자"
+    },
+    {
+      "id": 148,
+      "hanzi": "昨天",
+      "pinyin": "zuó tiān",
+      "translations": "어제"
+    },
+    {
+      "id": 149,
+      "hanzi": "坐",
+      "pinyin": "zuò",
+      "translations": "앉다"
+    },
+    {
+      "id": 150,
+      "hanzi": "做",
+      "pinyin": "zuò",
+      "translations": "하다"
+    }
+  ]
+}

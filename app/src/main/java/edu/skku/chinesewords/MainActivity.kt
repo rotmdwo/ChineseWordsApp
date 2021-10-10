@@ -49,10 +49,11 @@ class MainActivity : AppCompatActivity() {
 
         // TODO: 설정된 단어장 불러오기, 설정된 단어장 없으면 llEmptyWarning 띄우기
         val pref = AppPreference.get()
+        val hsk1Words = pref.getAllFromHSK1()
         val hsk2Words = pref.getAllFromHSK2()
         val hsk3Words = pref.getAllFromHSK3()
         val hsk4Words = pref.getAllFromHSK4()
-        val allWords = hsk2Words.plus(hsk3Words).plus(hsk4Words)
+        val allWords = hsk1Words.plus(hsk2Words).plus(hsk3Words).plus(hsk4Words)
         val allWordsIterator = allWords.keys.iterator()
         val myWords = pref.getAllFromMyWords()
         val myWordsIterator = myWords.keys.iterator()
