@@ -111,6 +111,14 @@ class AppPreference {
         mSharedPreferencsHSK4.edit().putString(character, meaning).apply()
     }
 
+    fun getAllFromHSK5(): Map<String, String> {
+        return mSharedPreferencsHSK5.all as Map<String, String>
+    }
+
+    fun setWordAtHSK5(character: String, meaning: String) {
+        mSharedPreferencsHSK5.edit().putString(character, meaning).apply()
+    }
+
     fun setWordAtMyWords(character: String, meaning: String) {
         mSharedPreferencsMyWords.edit().putString(character, meaning).apply()
         Log.d("asdf", "setWordAtMyWords: ${character}")

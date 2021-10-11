@@ -93,13 +93,14 @@ class WordAdapter(val context: Context) : RecyclerView.Adapter<WordAdapter.WordV
 
                             AppPreference.get().deleteWordFromMyWords(tvHanzi.text.toString())
 
-                            myWordsTree.deleteItem(tvHanzi.text.toString())
+                            myWordsTree.deleteItem("${editedPosition + 1}", tvHanzi.text.toString())
                         } else {
                             // 단어 추가
 
+                            val id = allWordsTree.allList[editedPosition].id
                             val pinyin = allWordsTree.allList[editedPosition].pinyin
                             val translations = allWordsTree.allList[editedPosition].translations
-                            AppPreference.get().setWordAtMyWords(tvHanzi.text.toString(), "${pinyin}\n${translations}\r${0}\t${0}")
+                            AppPreference.get().setWordAtMyWords(id, "${tvHanzi.text}@${pinyin}\n${translations}\r${0}\t${0}")
 
                             myWordsTree.addItem(allWordsTree.allList[editedPosition])
                             myWordsTree.shuffle()

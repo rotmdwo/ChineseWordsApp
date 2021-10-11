@@ -1,0 +1,40 @@
+{
+  "hsk5": [
+    {
+      "id": 1263,
+      "hanzi": "不好意思",
+      "pinyin": "bù hǎo yì si",
+      "translations": "부끄럽다, 미안합니다"
+    },
+    {
+      "id": 1349,
+      "hanzi": "传统",
+      "pinyin": "chuán tǒng",
+      "translations": "전통"
+    },
+    {
+      "id": 1548,
+      "hanzi": "古典",
+      "pinyin": "gǔ diǎn",
+      "translations": "고전"
+    },
+    {
+      "id": 2114,
+      "hanzi": "宿舍",
+      "pinyin": "sù shè",
+      "translations": "기숙사"
+    },
+    {
+      "id": 2125,
+      "hanzi": "太极拳",
+      "pinyin": "tài jí quán",
+      "translations": "태극권"
+    },
+    {
+      "id": 2218,
+      "hanzi": "武术",
+      "pinyin": "wǔ shù",
+      "translations": "무술"
+    }
+  ]
+}

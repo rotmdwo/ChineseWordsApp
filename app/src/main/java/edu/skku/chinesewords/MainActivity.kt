@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.speech.tts.TextToSpeech
-import android.util.Log
 import android.view.Gravity
 import android.view.View
 import androidx.core.view.isVisible
@@ -53,23 +52,23 @@ class MainActivity : AppCompatActivity() {
         val hsk2Words = pref.getAllFromHSK2()
         val hsk3Words = pref.getAllFromHSK3()
         val hsk4Words = pref.getAllFromHSK4()
-        val allWords = hsk1Words.plus(hsk2Words).plus(hsk3Words).plus(hsk4Words)
+        val hsk5Words = pref.getAllFromHSK5()
+        val allWords = hsk1Words.plus(hsk2Words).plus(hsk3Words).plus(hsk4Words).plus(hsk5Words)
         val allWordsIterator = allWords.keys.iterator()
         val myWords = pref.getAllFromMyWords()
         val myWordsIterator = myWords.keys.iterator()
-//        val iterator = words.keys.iterator()
 
         // 모든 단어 리스트
         while (allWordsIterator.hasNext()) {
             val key = allWordsIterator.next()
-//            val value = words.getOrDefault(key, "")
             val value = allWords.getOrDefault(key, "")
             if ("" != value) {
-                val pinyin: String = value.substring(0, value.indexOf("\n"))
+                val hanzi: String = value.substring(0, value.indexOf("@"))
+                val pinyin: String = value.substring(value.indexOf("@") + 1, value.indexOf("\n"))
                 val translations: String = value.substring(value.indexOf("\n") + 1, value.indexOf("\r"))
                 val correct = value.substring(value.indexOf("\r") + 1, value.indexOf("\t")).toInt()
                 val wrong = value.substring(value.indexOf("\t") + 1).toInt()
-                val word = Word(key, pinyin, translations, correct, wrong, if (correct == 0 && wrong == 0) 0.0 else if (wrong == 0) 1.0 else correct / (correct + wrong).toDouble())
+                val word = Word(key, hanzi, pinyin, translations, correct, wrong, if (correct == 0 && wrong == 0) 0.0 else if (wrong == 0) 1.0 else correct / (correct + wrong).toDouble())
                 word.selected = myWords.containsKey(key)
                 allWordsTree.addItem(word)
             }
@@ -78,14 +77,14 @@ class MainActivity : AppCompatActivity() {
         // 나의 단어 리스트
         while (myWordsIterator.hasNext()) {
             val key = myWordsIterator.next()
-//            val value = words.getOrDefault(key, "")
             val value = myWords.getOrDefault(key, "")
             if ("" != value) {
-                val pinyin: String = value.substring(0, value.indexOf("\n"))
+                val hanzi: String = value.substring(0, value.indexOf("@"))
+                val pinyin: String = value.substring(value.indexOf("@") + 1, value.indexOf("\n"))
                 val translations: String = value.substring(value.indexOf("\n") + 1, value.indexOf("\r"))
                 val correct = value.substring(value.indexOf("\r") + 1, value.indexOf("\t")).toInt()
                 val wrong = value.substring(value.indexOf("\t") + 1).toInt()
-                val word = Word(key, pinyin, translations, correct, wrong, if (correct == 0 && wrong == 0) 0.0 else if (wrong == 0) 1.0 else correct / (correct + wrong).toDouble())
+                val word = Word(key, hanzi, pinyin, translations, correct, wrong, if (correct == 0 && wrong == 0) 0.0 else if (wrong == 0) 1.0 else correct / (correct + wrong).toDouble())
                 word.selected = true
                 myWordsTree.addItem(word)
             }
@@ -781,12 +780,12 @@ class MainActivity : AppCompatActivity() {
     private fun markCorrect(word: Word) {
         word.correct++
         if (word.wrong != 0) word.accurateRatio = word.correct / (word.correct + word.wrong).toDouble()
-        pref.setWordAtMyWords(word.hanzi, "${word.pinyin}\n${word.translations}\r${word.correct}\t${word.wrong}")
+        pref.setWordAtMyWords(word.id, "${word.hanzi}@${word.pinyin}\n${word.translations}\r${word.correct}\t${word.wrong}")
     }
 
     private fun markWrong(word: Word) {
         word.wrong++
         if (word.correct != 0) word.accurateRatio = word.correct / (word.correct + word.wrong).toDouble()
-        pref.setWordAtMyWords(word.hanzi, "${word.pinyin}\n${word.translations}\r${word.correct}\t${word.wrong}")
+        pref.setWordAtMyWords(word.id, "${word.hanzi}@${word.pinyin}\n${word.translations}\r${word.correct}\t${word.wrong}")
     }
 }

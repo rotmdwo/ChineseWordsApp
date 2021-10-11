@@ -2,7 +2,6 @@ package edu.skku.chinesewords
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.google.android.gms.ads.MobileAds
 import kotlinx.coroutines.*
 import org.json.JSONObject
@@ -77,11 +76,12 @@ class OnBoardingActivity : AppCompatActivity() {
 
                 for (i in 0 until jsonArray.length()) {
                     val wordObject = jsonArray.getJSONObject(i)
+                    val id = wordObject.getString("id")
                     val hanzi = wordObject.getString("hanzi")
                     val pinyin = wordObject.getString("pinyin")
                     val translations = wordObject.getString("translations")
 
-                    pref.setWordAtHSK1(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
+                    pref.setWordAtHSK1(id, "${hanzi}@${pinyin}\n${translations}\r${0}\t${0}")
                 }
             } catch (e: IOException) {
                 e.printStackTrace()
@@ -107,11 +107,12 @@ class OnBoardingActivity : AppCompatActivity() {
 
                 for (i in 0 until jsonArray.length()) {
                     val wordObject = jsonArray.getJSONObject(i)
+                    val id = wordObject.getString("id")
                     val hanzi = wordObject.getString("hanzi")
                     val pinyin = wordObject.getString("pinyin")
                     val translations = wordObject.getString("translations")
 
-                    pref.setWordAtHSK2(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
+                    pref.setWordAtHSK2(id, "${hanzi}@${pinyin}\n${translations}\r${0}\t${0}")
                 }
             } catch (e: IOException) {
                 e.printStackTrace()
@@ -137,11 +138,12 @@ class OnBoardingActivity : AppCompatActivity() {
 
                 for (i in 0 until jsonArray.length()) {
                     val wordObject = jsonArray.getJSONObject(i)
+                    val id = wordObject.getString("id")
                     val hanzi = wordObject.getString("hanzi")
                     val pinyin = wordObject.getString("pinyin")
                     val translations = wordObject.getString("translations")
 
-                    pref.setWordAtHSK3(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
+                    pref.setWordAtHSK3(id, "${hanzi}@${pinyin}\n${translations}\r${0}\t${0}")
                 }
             } catch (e: IOException) {
                 e.printStackTrace()
@@ -167,11 +169,12 @@ class OnBoardingActivity : AppCompatActivity() {
 
                 for (i in 0 until jsonArray.length()) {
                     val wordObject = jsonArray.getJSONObject(i)
+                    val id = wordObject.getString("id")
                     val hanzi = wordObject.getString("hanzi")
                     val pinyin = wordObject.getString("pinyin")
                     val translations = wordObject.getString("translations")
 
-                    pref.setWordAtHSK4(hanzi, "${pinyin}\n${translations}\r${0}\t${0}")
+                    pref.setWordAtHSK4(id, "${hanzi}@${pinyin}\n${translations}\r${0}\t${0}")
                 }
             } catch (e: IOException) {
                 e.printStackTrace()
@@ -182,6 +185,31 @@ class OnBoardingActivity : AppCompatActivity() {
 
         if (!pref.getExist(AppPreference.EXIST_HSK_5)) {
 
+            var json = ""
+
+            try {
+                val inputStream = assets.open("hsk5.json")
+                val fileSize = inputStream.available()
+                val buffer = ByteArray(fileSize)
+                inputStream.read(buffer)
+                inputStream.close()
+
+                json = String(buffer, Charsets.UTF_8)
+                val jsonObject = JSONObject(json)
+                val jsonArray = jsonObject.getJSONArray("hsk5")
+
+                for (i in 0 until jsonArray.length()) {
+                    val wordObject = jsonArray.getJSONObject(i)
+                    val id = wordObject.getString("id")
+                    val hanzi = wordObject.getString("hanzi")
+                    val pinyin = wordObject.getString("pinyin")
+                    val translations = wordObject.getString("translations")
+
+                    pref.setWordAtHSK5(id, "${hanzi}@${pinyin}\n${translations}\r${0}\t${0}")
+                }
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
 
             pref.setExist(AppPreference.EXIST_HSK_5)
         }

@@ -46,9 +46,9 @@ class WordTree {
         }
     }
 
-    fun deleteItem(hanzi: String) {
+    fun deleteItem(id: String, hanzi: String) {
         for (i in 0 until allList.size) {
-            if (allList[i].hanzi == hanzi) {
+            if (allList[i].id == id) {
                 allList.removeAt(i)
                 break
             }
@@ -57,7 +57,7 @@ class WordTree {
         when (hanzi.length) {
             1 -> {
                 for (i in 0 until length1List.size) {
-                    if (length1List[i].hanzi == hanzi) {
+                    if (length1List[i].id == id) {
                         length1List.removeAt(i)
                         break
                     }
@@ -65,7 +65,7 @@ class WordTree {
             }
             2 -> {
                 for (i in 0 until length2List.size) {
-                    if (length2List[i].hanzi == hanzi) {
+                    if (length2List[i].id == id) {
                         length2List.removeAt(i)
                         break
                     }
@@ -73,7 +73,7 @@ class WordTree {
             }
             3 -> {
                 for (i in 0 until length3List.size) {
-                    if (length3List[i].hanzi == hanzi) {
+                    if (length3List[i].id == id) {
                         length3List.removeAt(i)
                         break
                     }
@@ -81,7 +81,7 @@ class WordTree {
             }
             4 -> {
                 for (i in 0 until length4List.size) {
-                    if (length4List[i].hanzi == hanzi) {
+                    if (length4List[i].id == id) {
                         length4List.removeAt(i)
                         break
                     }
@@ -89,7 +89,7 @@ class WordTree {
             }
             else -> {
                 for (i in 0 until length4List.size) {
-                    if (length4List[i].hanzi == hanzi) {
+                    if (length4List[i].id == id) {
                         length4List.removeAt(i)
                         break
                     }
@@ -99,7 +99,7 @@ class WordTree {
 
         var i = 0
         while (i < questionList.size) {
-            if (questionList[i].hanzi == hanzi) questionList.removeAt(i)
+            if (questionList[i].id == id) questionList.removeAt(i)
             else i++
         }
     }
@@ -110,10 +110,11 @@ class WordTree {
         return questionList[currentIndex++]
     }
 
-    class Word(val hanzi: String, val pinyin: String, val translations: String, var correct: Int, var wrong: Int, var accurateRatio: Double) : Parcelable {
+    class Word(val id: String, val hanzi: String, val pinyin: String, val translations: String, var correct: Int, var wrong: Int, var accurateRatio: Double) : Parcelable {
         var selected = false
 
         constructor(parcel: Parcel) : this(
+                parcel.readString()!!,
             parcel.readString()!!,
             parcel.readString()!!,
             parcel.readString()!!,
@@ -124,6 +125,7 @@ class WordTree {
         }
 
         override fun writeToParcel(parcel: Parcel, flags: Int) {
+            parcel.writeString(id)
             parcel.writeString(hanzi)
             parcel.writeString(pinyin)
             parcel.writeString(translations)

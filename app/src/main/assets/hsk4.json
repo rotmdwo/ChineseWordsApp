@@ -60,7 +60,12 @@
       "pinyin": "shēng huó",
       "translations": "생활"
     },
-
+    {
+      "id": 1024,
+      "hanzi": "躺",
+      "pinyin": "tǎng",
+      "translations": "엎드리다"
+    },
     {
       "id": 1033,
       "hanzi": "条件",
